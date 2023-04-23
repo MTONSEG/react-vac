@@ -1,0 +1,25 @@
+.wrapper {
+	margin: 0 auto;
+	max-width: 1680px;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.container {
+	max-width: 1248px;
+	margin: 0 auto;
+	padding: 0 24px;
+	&_full {
+		margin: 0;
+		max-width: 100%;
+	}
+}
+
+
+@media (max-width: 767px) {
+	.container {
+		padding: 0 20px;
+	}
+}

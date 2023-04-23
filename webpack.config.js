@@ -12,7 +12,7 @@ module.exports = {
 	entry: './src/index.js',
 	devtool: 'source-map',
 	output: {
-		path: path.resolve(__dirname, './root'),
+		path: path.resolve(__dirname, './build'),
 		assetModuleFilename: 'assets/fonts/[hash][ext][query]',
 		filename: 'js/app.[hash].js',
 		clean: true,
