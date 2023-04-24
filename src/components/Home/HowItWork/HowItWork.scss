@@ -1,7 +1,7 @@
 @import '../../../styles/vars.scss';
 
 .it-work {
-	margin: 0 auto 215px;
+	margin: 0 auto 218px;
 	width: 100%;
 	max-width: 1440px;
 	padding: 0 0 74px;
@@ -39,7 +39,7 @@
 
 @media (max-width: 992px) {
 	.it-work {
-		margin: 0 0 160px;
+		margin: 0 0 163px;
 		padding: 0 0 210px;
 		&__body {
 			padding: 40px;
@@ -62,7 +62,7 @@
 @media (max-width: 575px) {
 	.it-work {
 		padding: 0 0 182px;
-		margin: 0 0 80px;
+		margin: 0 0 84px;
 		&__body {
 			padding: 23px 20px 20px;
 		}
