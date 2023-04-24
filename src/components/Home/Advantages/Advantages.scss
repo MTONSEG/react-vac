@@ -1,5 +1,5 @@
 .advantages{
-	padding: 0  0 100px;
+	margin: 0 0 176px;
 	&__title {
 		margin: 0 0 60px;
 	}
@@ -37,7 +37,7 @@
 			}
 		}
 		&:nth-child(2) {
-			padding: 0 80px 150px;
+			padding: 0 80px 157px;
 			position: absolute;
 			left: 50%;
 			top: 0;
@@ -78,6 +78,7 @@
 
 @media (max-width: 1180px) {
 	.advantages{
+		margin: 0 0 115px;
 		&__title {
 			text-align: center;
 		}
@@ -107,6 +108,7 @@
 
 @media (max-width: 575px) {
 	.advantages{
+		margin: 0 0 82px;
 		&__title {
 			text-align: center;
 			margin: 0 0 28px;

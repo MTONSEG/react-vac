@@ -13,13 +13,13 @@ export function Picture({ img, webp, ...rest }) {
 				rest.imgMob ?
 					<>
 						<source
-							srcSet={rest.imgMob}
-							type={type}
+							srcSet={rest.webpMob}
+							type='image/webp'
 							media={`(max-width: ${rest.widthMob}px)`}
 						/>
 						<source
-							srcSet={rest.webpMob}
-							type='image/webp'
+							srcSet={rest.imgMob}
+							type={type}
 							media={`(max-width: ${rest.widthMob}px)`}
 						/>
 					</> : ''
@@ -28,20 +28,20 @@ export function Picture({ img, webp, ...rest }) {
 				rest.imgTab ?
 					<>
 						<source
-							srcSet={rest.imgTab}
-							type={type}
+							srcSet={rest.webpTab}
+							type='image/webp'
 							media={`(max-width: ${rest.widthTab}px)`}
 						/>
 						<source
-							srcSet={rest.webpTab}
-							type='image/webp'
+							srcSet={rest.imgTab}
+							type={type}
 							media={`(max-width: ${rest.widthTab}px)`}
 						/>
 					</> : ''
 			}
 			<source srcSet={webp} type='image/webp' />
-			<source srcSet={img} type={type} />
-			<img className={rest.className} src={img} alt={rest.alt} loading="lazy"/>
+			{/* <source srcSet={img} type={type} /> */}
+			<img className={rest.className} src={img} alt={rest.alt} />
 		</picture>
 	)
 }

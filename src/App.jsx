@@ -9,7 +9,7 @@ export function App({ state }) {
 	return (
 		<div className="wrapper">
 			<Header logo={state.images.logo} />
-
+			{/* <Home state={state.homePage} /> */}
 			<Routes>
 				<Route path="/" element={
 					<Home state={state.homePage} />}

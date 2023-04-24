@@ -32,7 +32,7 @@ module.exports = {
 				options: {
 					plugins: [
 						['mozjpeg', { quality: 85 }],
-						['optipng', { optimizationLevel: 5 }],
+						['optipng', { optimizationLevel: 3 }],
 						[
 							"svgo",
 							{
