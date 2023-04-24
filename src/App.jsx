@@ -12,7 +12,7 @@ export function App({ state }) {
 
 			<Routes>
 				<Route path="/" element={
-					<Home state={state.hero} />}
+					<Home state={state.homePage} />}
 				/>
 
 				{/* <Route path="/calculator" element={

@@ -16,6 +16,9 @@
 		margin: 0;
 		max-width: 100%;
 	}
+	&_work-it {
+		padding: 0;
+	}
 }
 
 .big-title {
@@ -26,6 +29,17 @@
 	color: #fff;
 }
 
+.title {
+	font-size: 45px;
+	line-height: 140.5%;
+}
+
+.text {
+	font-size: 16px;
+	line-height: 180%;
+	letter-spacing: 0.02em;
+	color: $textColor;
+}
 
 @media (max-width: 767px) {
 	.wrapper {
@@ -38,4 +52,11 @@
 	.big-title {
 		font-size: 35px;
 	}
+
+	.title {
+		font-size: 30px;
+	}
+}
+@media (max-width: 575px) {
+
 }

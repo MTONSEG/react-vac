@@ -30,6 +30,7 @@
 		&__row {
 		flex-direction: column;
 		align-items: center;
+		padding: 66px 0 129px;
 		}
 		&__body,
 		&__slider {
@@ -48,30 +49,25 @@
 @media (max-width: 768px) {
 	.hero {
 		background: url('../../../assets/images/home_hero_tab.svg') center/cover no-repeat, $violetColor;
-		&__row {
-			padding: 66px 0 129px;
-		}
-		&__title {
-			padding: 0 6px;
-		}
-	}
-}
-
-@media (max-width: 768px) {
-	.hero {
-		&__title {
-			margin: 0 0 38px;
-		}
-		&__btn {
-			max-width: 214px;
-		}
 	}
 }
 @media (max-width: 360px) {
 	.hero {
 		background: url('../../../assets/images/home_hero_m.svg') center/cover no-repeat, $violetColor;
+	}
+}
+
+@media (max-width: 767px) {
+	.hero {		
 		&__row {
-			padding: 53px 0 94px;
+		padding: 53px 0 94px;
+	}
+		&__title {
+			margin: 0 0 38px;
+			padding: 0 6px;
+		}
+		&__btn {
+			max-width: 214px;
 		}
 	}
 }

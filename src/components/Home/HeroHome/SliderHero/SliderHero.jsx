@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
-// import { Navigation } from 'swiper';
 
 import './SliderHero.scss';
 import { Picture } from "../../../UI/Picture/Picture.jsx";
