@@ -14,7 +14,7 @@ export const Header = props => {
 					<div className="header__right">
 						<div className="header__buttons">
 							<LinerBtn title="Inventory" className="header__inventory-btn" />
-							<SolidBtn title="Request a car" className="header__request-btn" />
+							<SolidBtn title="Request a car" className=" btn_solid header__request-btn" />
 						</div>
 
 						<MenuBtn />

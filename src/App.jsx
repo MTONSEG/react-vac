@@ -8,11 +8,11 @@ import { Home } from "./components/Home/Home.jsx";
 export function App({ state }) {
 	return (
 		<div className="wrapper">
-			<Header logo={state.images.header.logo} />
+			<Header logo={state.images.logo} />
 
 			<Routes>
 				<Route path="/" element={
-					<Home />}
+					<Home state={state.hero} />}
 				/>
 
 				{/* <Route path="/calculator" element={

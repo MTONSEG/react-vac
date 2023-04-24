@@ -7,7 +7,7 @@ export const SolidBtn = props => {
 	return (
 		<button
 			href="#"
-			className={'btn btn_solid' + style}
+			className={'btn' + style}
 			onClick={e => { e.preventDefault() }}
 		>
 			{props.title}
