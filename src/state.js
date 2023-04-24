@@ -70,7 +70,7 @@ const images = {
 		imgChooseDreamM: imgChooseDreamM,
 		imgChooseDreamWebpM: imgChooseDreamWebpM,
 		imgChooseDreamT: imgChooseDreamT,
-		imgChooseDreamWebpT:imgChooseDreamWebpT,
+		imgChooseDreamWebpT: imgChooseDreamWebpT,
 	}
 }
 
@@ -192,7 +192,26 @@ const homePage = {
 			webpM: images.homePage.imgChooseDreamWebpM,
 			imgT: images.homePage.imgChooseDreamT,
 			webpT: images.homePage.imgChooseDreamWebpT,
-		}
+		},
+	},
+	happyCustomers: {
+		title: 'Happy customers',
+		text: 'Since 2017, we have helped thousands of Canadians get their dream vehicles from the comfort of their homes.',
+		subtitle: 'What are you waiting? Get started right now!',
+		cards: [
+			{
+				num: '7,988+',
+				text: 'Sold Cars'
+			},
+			{
+				num: '16,974+',
+				text: 'Vehicles To Choose From'
+			},
+			{
+				num: '123',
+				text: 'Experts Across Canada'
+			},
+		]
 	}
 }
 

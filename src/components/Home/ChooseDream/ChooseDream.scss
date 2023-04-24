@@ -1,5 +1,5 @@
 .choose-dream {
-	margin: 0 0 232px;
+	margin: 0 0 237px;
 	&__row {
 		display: flex;
 		justify-content: space-between;
@@ -30,6 +30,7 @@
 
 @media (max-width: 992px) {
 	.choose-dream {
+		margin: 0 0 163px;
 		&__row {
 			flex-direction: column-reverse;
 			max-width: 600px;
@@ -54,6 +55,7 @@
 
 @media (max-width: 767px) {
 	.choose-dream {
+		margin: 0 0 83px;
 		&__row {
 			gap: 2px;
 		}
