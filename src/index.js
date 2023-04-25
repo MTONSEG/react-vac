@@ -9,7 +9,7 @@ import { BrowserRouter } from "react-router-dom";
 createRoot(document.getElementById('root'))
 	.render(
 		<BrowserRouter>
-			<App state={state} />
+			<App store={state} />
 		</BrowserRouter>
 	);
 

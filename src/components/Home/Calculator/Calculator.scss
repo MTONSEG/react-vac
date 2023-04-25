@@ -1,0 +1,19 @@
+.calculator {
+	margin: 0 0 220px;
+	&__head {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 0 60px;
+	}
+	&__body {
+		display: flex;
+		gap: 30px;
+	}
+	&__title{
+		max-width: 500px;
+	}
+	&__text {
+		margin: 10px 0 0;
+		max-width: 599px;
+	}
+}

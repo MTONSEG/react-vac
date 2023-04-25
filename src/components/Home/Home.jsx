@@ -7,9 +7,10 @@ import { Advantages } from "./Advantages/Advantages.jsx";
 import { ChooseDream } from "./ChooseDream/ChooseDream.jsx";
 import { HappyCustomers } from "./HappyCustomers/HappyCustomers.jsx";
 import { CommentsSlider } from "./CommentsSlider/CommentsSlider.jsx";
+import { Calculator } from "./Calculator/Calculator.jsx";
 
 
-export const Home = ({ state }) => {
+export const Home = ({ state}) => {
 	return (
 		<>
 			<HeroHome state={state.hero} />
@@ -18,7 +19,8 @@ export const Home = ({ state }) => {
 			<Advantages state={state.advantages} />
 			<ChooseDream state={state.chooseDream} />
 			<HappyCustomers state={state.happyCustomers} />
-			<CommentsSlider state={state.commentsSlider}/>
+			<CommentsSlider state={state.commentsSlider} />
+			<Calculator state={state.calculator} />
 		</>
 	)
 }

@@ -1,0 +1,29 @@
+.payment-range {
+	width: 30.8333%;
+	box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	padding: 60px 60px 60px;
+	&__item {
+		margin: 0 0 20px;
+		&:first-child {
+			margin: 0 0 30px;
+			& .payment-range__value {
+				color: #7481FF;
+				font-weight: 700;
+				font-size: 45px;
+				line-height: 140.5%;
+			}
+		}
+		&:last-child {
+			margin: 0 0 40px;
+		}
+	}
+	&__title {
+		margin: 0 0 1px
+	}
+	&__value {
+		font-weight: 700;
+		font-size: 25px;
+		line-height: 140%;
+	}
+}

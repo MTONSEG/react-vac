@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import { v1 as uuidv1, v1 } from 'uuid';
 import logo from './assets/icons/logo.svg';
 import logoFooter from './assets/icons/logo_footer.svg';
@@ -80,7 +79,7 @@ const images = {
 		imgCommentWebp: imgCommentWebp,
 		imgComment2: imgComment2,
 		imgComment2Webp: imgComment2Webp,
-		iconArrowWhite:iconArrowWhite,
+		iconArrowWhite: iconArrowWhite,
 	}
 }
 
@@ -253,6 +252,34 @@ const homePage = {
 				},
 				name: 'Alex Stone',
 				comment: 'Lorem esse sint in nisi id ese. Adipisicing ullamco nisi veniam occaecat id excepteur ad non. Sunt occaecat elit ullamco commodo exercitation. Anim mollit irure Lorem proident veniam excepteur non irure Lorem.'
+			},
+		]
+	},
+	calculator: {
+		title: 'Let’s figure out how much you can afford',
+		text: 'Before you start shopping, let’s figure out how much you can afford. Move the sliders to see how the loan duration and the total loan amount affect your monthly payments.',
+		loanAmount: {
+			title: 'Loan Amount',
+			max: 1000000,
+			default: 150000
+		},
+		loanDuration: {
+			title: 'Loan Duration',
+			max: 60,
+			default: 18
+		},
+		payments: [
+			{
+				title: 'Bi-Weekly Payment',
+				value: `$ 483`,
+			},
+			{
+				title: 'Monthly Payment',
+				value: `$ 966`,
+			},
+			{
+				title: 'Weekly Payment',
+				value: `$ 241`,
 			},
 		]
 	}

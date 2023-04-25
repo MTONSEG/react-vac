@@ -1,18 +1,24 @@
-import React from "react"
+import React, { useState } from "react"
 import { Route, Routes } from "react-router-dom";
 import './App.scss';
 import { Footer } from "./components/UI/Footer/Footer.jsx";
 import { Header } from "./components/UI/Header/Header.jsx";
 import { Home } from "./components/Home/Home.jsx";
 
-export function App({ state }) {
+export function App({ store }) {
+
+	let [state, setState] = useState(store);
+
 	return (
 		<div className="wrapper">
 			<Header logo={state.images.logo} />
 			{/* <Home state={state.homePage} /> */}
 			<Routes>
 				<Route path="/" element={
-					<Home state={state.homePage} />}
+					<Home
+						state={state.homePage}
+						setState={setState}	
+					/>}
 				/>
 
 				{/* <Route path="/calculator" element={

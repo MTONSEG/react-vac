@@ -34,6 +34,7 @@ export const CommentsSlider = ({ state }) => {
 						onBeforeInit={(swiper) => {
 							swiperRef.current = swiper;
 						}}
+						spaceBetween={10}
 					>
 						{slides}
 					</Swiper>
