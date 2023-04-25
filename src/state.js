@@ -36,7 +36,12 @@ import imgChooseDreamM from './assets/images/home_choise-car_mob.png';
 import imgChooseDreamWebpM from './assets/images/home_choise-car_mob.png?as=webp';
 import imgChooseDreamT from './assets/images/home_choise-car_tab.png';
 import imgChooseDreamWebpT from './assets/images/home_choise-car_tab.png?as=webp';
-
+//Comments Slider images
+import imgComment from './assets/images/home-comments__photo.jpg';
+import imgCommentWebp from './assets/images/home-comments__photo.jpg?as=webp';
+import imgComment2 from './assets/images/home-comments__photo2.jpg';
+import imgComment2Webp from './assets/images/home-comments__photo2.jpg?as=webp';
+import iconArrowWhite from './assets/icons/slider_arr-left_white.svg';
 
 const images = {
 	logo: logo,
@@ -71,6 +76,11 @@ const images = {
 		imgChooseDreamWebpM: imgChooseDreamWebpM,
 		imgChooseDreamT: imgChooseDreamT,
 		imgChooseDreamWebpT: imgChooseDreamWebpT,
+		imgComment: imgComment,
+		imgCommentWebp: imgCommentWebp,
+		imgComment2: imgComment2,
+		imgComment2Webp: imgComment2Webp,
+		iconArrowWhite:iconArrowWhite,
 	}
 }
 
@@ -210,6 +220,39 @@ const homePage = {
 			{
 				num: '123',
 				text: 'Experts Across Canada'
+			},
+		]
+	},
+	commentsSlider: {
+		title: 'What our client say about us!',
+		iconBtn: images.homePage.iconArrowWhite,
+		slides: [
+			{
+				id: v1(),
+				image: {
+					img: images.homePage.imgComment,
+					webp: images.homePage.imgCommentWebp,
+				},
+				name: 'Laura Chaisson',
+				comment: 'In irure et ipsum eiusmod adipisicing id elit cillum proident. Adipisicing ullamco nisi veniam occaecat id excepteur ad non. Sunt occaecat elit ullamco commodo exercitation. Anim mollit irure Lorem proident veniam excepteur non irure Lorem. Lorem esse sint in nisi id ese'
+			},
+			{
+				id: v1(),
+				image: {
+					img: images.homePage.imgComment2,
+					webp: images.homePage.imgComment2Webp,
+				},
+				name: 'John Smith',
+				comment: 'Adipisicing ullamco nisi veniam occaecat id excepteur ad non. Sunt occaecat elit ullamco commodo exercitation. Anim mollit irure Lorem proident veniam excepteur non irure Lorem. Lorem esse sint in nisi id ese'
+			},
+			{
+				id: v1(),
+				image: {
+					img: images.homePage.imgComment,
+					webp: images.homePage.imgCommentWebp,
+				},
+				name: 'Alex Stone',
+				comment: 'Lorem esse sint in nisi id ese. Adipisicing ullamco nisi veniam occaecat id excepteur ad non. Sunt occaecat elit ullamco commodo exercitation. Anim mollit irure Lorem proident veniam excepteur non irure Lorem.'
 			},
 		]
 	}

@@ -1,5 +1,5 @@
 .happy-customers {
-	margin: 0 0 220px;
+	margin: 0 0 221px;
 	&__row {
 		display: flex;
 		align-items: flex-start;
@@ -32,12 +32,13 @@
 		flex: 1 1 600px;
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-		gap: 42px 40px;
+		gap: 40px;
 	}
 }
 
 @media (max-width: 992px) {
 	.happy-customers {
+		margin: 0 0 162px;
 		&__row {
 			flex-direction: column;
 			max-width: 600px;
@@ -62,6 +63,7 @@
 
 @media (max-width: 767px) {
 	.happy-customers {
+		margin: 0 0 82px;
 		&__list {
 			grid-template-columns: 1fr;
 			gap: 10px;
