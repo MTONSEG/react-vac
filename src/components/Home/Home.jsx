@@ -8,6 +8,7 @@ import { ChooseDream } from "./ChooseDream/ChooseDream.jsx";
 import { HappyCustomers } from "./HappyCustomers/HappyCustomers.jsx";
 import { CommentsSlider } from "./CommentsSlider/CommentsSlider.jsx";
 import { Calculator } from "./Calculator/Calculator.jsx";
+import { InterestingRead } from "./InterestingRead/InterestingRead.jsx";
 
 
 export const Home = ({ state}) => {
@@ -21,6 +22,7 @@ export const Home = ({ state}) => {
 			<HappyCustomers state={state.happyCustomers} />
 			<CommentsSlider state={state.commentsSlider} />
 			<Calculator state={state.calculator} />
+			<InterestingRead state={state.interesting} />
 		</>
 	)
 }

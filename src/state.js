@@ -41,6 +41,13 @@ import imgCommentWebp from './assets/images/home-comments__photo.jpg?as=webp';
 import imgComment2 from './assets/images/home-comments__photo2.jpg';
 import imgComment2Webp from './assets/images/home-comments__photo2.jpg?as=webp';
 import iconArrowWhite from './assets/icons/slider_arr-left_white.svg';
+//Interesting read
+import imgInteresting1 from './assets/images/home_interest-img1.jpg';
+import imgInteresting1Webp from './assets/images/home_interest-img1.jpg?as=webp';
+import imgInteresting2 from './assets/images/home_interest-img2.jpg';
+import imgInteresting2Webp from './assets/images/home_interest-img2.jpg?as=webp';
+import imgInteresting3 from './assets/images/home_interest-img3.jpg';
+import imgInteresting3Webp from './assets/images/home_interest-img3.jpg?as=webp';
 
 const images = {
 	logo: logo,
@@ -80,6 +87,12 @@ const images = {
 		imgComment2: imgComment2,
 		imgComment2Webp: imgComment2Webp,
 		iconArrowWhite: iconArrowWhite,
+		imgInteresting1: imgInteresting1,
+		imgInteresting1Webp:imgInteresting1Webp,
+		imgInteresting2: imgInteresting2,
+		imgInteresting2Webp:imgInteresting2Webp,
+		imgInteresting3: imgInteresting3,
+		imgInteresting3Webp:imgInteresting3Webp,
 	}
 }
 
@@ -280,6 +293,40 @@ const homePage = {
 			{
 				title: 'Weekly Payment',
 				value: `$ 241`,
+			},
+		]
+	},
+	interesting: {
+		title: 'Interesting to read',
+		iconBtn: images.homePage.iconArrowWhite,
+		list: [
+			{
+				id: v1(),
+				date: '10 May, 2020',
+				text: 'How to save on buying a car? Why is it better to buy from us',
+				image:{
+					img: images.homePage.imgInteresting1,
+					webp: images.homePage.imgInteresting1Webp,
+				}
+			},
+			{
+				id: v1(),
+				date: '10 May, 2020',
+				text: 'How to save on buying a car? Why is it better to buy from us',
+				image:{
+					img: images.homePage.imgInteresting2,
+					webp: images.homePage.imgInteresting2Webp,
+				}
+			},
+			{
+				id: v1(),
+				date: '10 May, 2020',
+				text: `How to save on buying a car?  
+				Why is it better to buy from us`,
+				image:{
+					img: images.homePage.imgInteresting3,
+					webp: images.homePage.imgInteresting3Webp,
+				}
 			},
 		]
 	}
