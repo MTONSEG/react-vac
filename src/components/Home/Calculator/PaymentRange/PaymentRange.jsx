@@ -3,7 +3,7 @@ import { SolidBtn } from "../../../UI/Buttons/SolidBtn.jsx";
 import './PaymentRange.scss';
 
 
-export const PaymentRange = ({ state }) => {
+export const PaymentRange = ({ state, ...props }) => {
 
 	let items = state.map((elem, index) => (
 		<li key={index} className="payment-range__item">
@@ -18,7 +18,7 @@ export const PaymentRange = ({ state }) => {
 
 
 	return (
-		<div className="payment-range">
+		<div className={`${props.className} payment-range`}>
 			<ul className="payment-range__list">
 				{items}
 			</ul>

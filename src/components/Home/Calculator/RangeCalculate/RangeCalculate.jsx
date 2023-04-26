@@ -11,7 +11,7 @@ export const RangeCalculate = props => {
 	const onChangeRadioHandle = e => { setRadioValue(e.target.value) }
 
 	return (
-		<div className="calc-range">
+		<div className={`${props.className} calc-range`}>
 			<ul className="calc-range__filter">
 				<RadioRangeCalculate
 					className="calc-range__radio"

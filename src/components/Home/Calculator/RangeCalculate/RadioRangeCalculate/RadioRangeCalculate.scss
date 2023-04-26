@@ -59,3 +59,20 @@
 		}
 	}
 }
+
+@media (max-width: 767px) {
+	.slider-range {
+		&__title {
+			font-size: 18px;
+			margin: 0 0 18px;
+		}
+		&__value {
+			top: -5px;
+			font-size: 20px;
+			span {
+				font-size: 14px;
+				margin: 0 0 0 2px;
+			}
+		}
+	}
+}

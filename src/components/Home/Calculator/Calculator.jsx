@@ -22,6 +22,7 @@ export const Calculator = ({ state }) => {
 				</div>
 				<div className="calculator__body">
 					<RangeCalculate
+						className="calculator__range"
 						state={state}
 						loanAmount={loanAmount}
 						setLoanAmount={setLoanAmount}
@@ -29,6 +30,7 @@ export const Calculator = ({ state }) => {
 						setLoanDuration={setLoanDuration}
 					/>
 					<PaymentRange
+						className="calculator__payment"
 						state={state.payments}
 					/>
 				</div>

@@ -1,11 +1,6 @@
 @import '../../../../styles/vars.scss';
 
 .calc-range {
-	background: #FFFFFF;
-	box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.1);
-	border-radius: 5px;
-	padding: 57px 60px 107px;
-	width: 66.6666%;
 	&__filter {
 		border: 1px solid #7481FF;
 		border-radius: 2px;
@@ -53,4 +48,44 @@
 	}
 }
 
-
+@media (max-width: 992px) {
+	.calc-range {
+		&__filter {
+			margin: 0 0 37px;
+		}
+		&__inputs {
+			gap: 43px;
+		}
+		
+	}
+}
+@media (max-width: 767px) {
+	.calc-range {
+		&__filter {
+			margin: 0 0 44px;
+			width: 100%;
+			justify-content: space-between;
+		}
+		&__inputs {
+			gap: 24px;
+		}
+		&__radio {
+			&:first-child,
+			&:last-child {
+				width: 32%;
+			}
+			&:nth-child(2){
+				width: 38%;
+			}
+			span {
+				font-size: 16px;
+				line-height: 14px;
+				padding: 10px 5px 9px;
+				text-align: center;
+				&:nth-child(2){
+					padding: 10px 14px 9px;
+				}
+			}
+		}
+	}
+}

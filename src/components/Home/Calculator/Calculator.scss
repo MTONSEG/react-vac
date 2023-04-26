@@ -13,7 +13,79 @@
 		max-width: 500px;
 	}
 	&__text {
-		margin: 10px 0 0;
+		margin: 10px 0 0 60px;
 		max-width: 599px;
+	}
+	&__range{
+		background: #FFFFFF;
+		box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.1);
+		border-radius: 5px;
+		padding: 57px 60px 107px;
+		width: 66.6666%;
+	}
+	&__payment{
+		width: 30.8333%;
+		box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.1);
+		border-radius: 5px;
+		padding: 60px 60px 60px;
+	}
+}
+
+@media (max-width: 992px) {
+	.calculator {
+		&__text {
+			max-width: 41.5%;
+		}
+		&__body {
+			flex-direction: column;
+			gap: 0;
+			box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.1);
+			padding: 37px 40px 40px;
+		}
+		&__range,
+		&__payment {
+			width: 100%;
+			box-shadow: none;
+		}
+		&__range {
+			padding: 0;
+			margin:  0 0 37px;
+		}
+		&__payment {
+			padding: 0 4px 0 0;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.calculator {
+		&__head {
+			flex-direction: column;
+			margin: 0 0 28px;
+		}
+		&__text,
+		&__title {
+			max-width: 100%;
+		}
+		&__title {
+			margin: 0 0 10px;
+		}
+		&__text {
+			margin: 0;
+		}
+		&__body {
+			padding: 20px 20px 20px;
+		}
+		&__range,
+		&__payment {
+			width: 100%;
+			box-shadow: none;
+		}
+		&__range {
+			margin: 0 0 46px;
+		}
+		&__payment{
+			padding: 0;
+		}
 	}
 }
