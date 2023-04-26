@@ -1,6 +1,11 @@
 import { v1 as uuidv1, v1 } from 'uuid';
 import logo from './assets/icons/logo.svg';
 import logoFooter from './assets/icons/logo_footer.svg';
+import logoCompany from './assets/icons/creator-logo.svg';
+//Social icons
+import iconInstagram from './assets/icons/instagram.svg';
+import iconFacebook from './assets/icons/facebook.svg';
+import iconYoutube from './assets/icons/youtube.svg';
 //hero slider images 
 import carSuv from './assets/images/home_suv.png';
 import carSuvWebp from './assets/images/home_suv.png?as=webp';
@@ -52,6 +57,10 @@ import imgInteresting3Webp from './assets/images/home_interest-img3.jpg?as=webp'
 const images = {
 	logo: logo,
 	logoFooter: logoFooter,
+	logoCompany: logoCompany,
+	iconInstagram: iconInstagram,
+	iconFacebook: iconFacebook,
+	iconYoutube: iconYoutube,
 	homePage: {
 		carSuv: carSuv,
 		carSuvWebp: carSuvWebp,
@@ -88,11 +97,11 @@ const images = {
 		imgComment2Webp: imgComment2Webp,
 		iconArrowWhite: iconArrowWhite,
 		imgInteresting1: imgInteresting1,
-		imgInteresting1Webp:imgInteresting1Webp,
+		imgInteresting1Webp: imgInteresting1Webp,
 		imgInteresting2: imgInteresting2,
-		imgInteresting2Webp:imgInteresting2Webp,
+		imgInteresting2Webp: imgInteresting2Webp,
 		imgInteresting3: imgInteresting3,
-		imgInteresting3Webp:imgInteresting3Webp,
+		imgInteresting3Webp: imgInteresting3Webp,
 	}
 }
 
@@ -304,7 +313,7 @@ const homePage = {
 				id: v1(),
 				date: '10 May, 2020',
 				text: 'How to save on buying a car? Why is it better to buy from us',
-				image:{
+				image: {
 					img: images.homePage.imgInteresting1,
 					webp: images.homePage.imgInteresting1Webp,
 				}
@@ -313,7 +322,7 @@ const homePage = {
 				id: v1(),
 				date: '10 May, 2020',
 				text: 'How to save on buying a car? Why is it better to buy from us',
-				image:{
+				image: {
 					img: images.homePage.imgInteresting2,
 					webp: images.homePage.imgInteresting2Webp,
 				}
@@ -323,7 +332,7 @@ const homePage = {
 				date: '10 May, 2020',
 				text: `How to save on buying a car?  
 				Why is it better to buy from us`,
-				image:{
+				image: {
 					img: images.homePage.imgInteresting3,
 					webp: images.homePage.imgInteresting3Webp,
 				}

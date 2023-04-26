@@ -17,7 +17,7 @@ export function App({ store }) {
 				<Route path="/" element={
 					<Home
 						state={state.homePage}
-						setState={setState}	
+						setState={setState}
 					/>}
 				/>
 
@@ -45,7 +45,15 @@ export function App({ store }) {
 				/> */}
 			</Routes>
 
-			<Footer />
+			<Footer images={
+				{
+					logo: state.images.logoFooter,
+					icon: state.images.logoCompany,
+					instagram: state.images.iconInstagram,
+					facebook: state.images.iconFacebook,
+					youtube: state.images.iconYoutube,
+				}
+			} />
 		</div>
 	)
 }

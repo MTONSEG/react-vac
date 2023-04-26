@@ -1,5 +1,4 @@
 .interesting-read {
-	margin: 0 0 40px;
 	&__head {
 		display: flex;
 		justify-content: space-between;
@@ -24,6 +23,7 @@
 
 @media (max-width: 767px) {
 	.interesting-read {
+		margin: 0 0 29px;
 		&__head {
 			margin: 0 0 27px;
 		}
