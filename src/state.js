@@ -340,9 +340,39 @@ const homePage = {
 		]
 	}
 }
+const calcPage = {
+	bigTitle: 'Use our free calculator!',
+	title: 'Let’s figure out how much you can afford',
+	text: 'Before you start shopping, let’s figure out how much you can afford. Move the sliders to see how the loan duration and the total loan amount affect your monthly payments.',
+	loanAmount: {
+		title: 'Loan Amount',
+		max: 1000000,
+		default: 150000
+	},
+	loanDuration: {
+		title: 'Loan Duration',
+		max: 60,
+		default: 18
+	},
+	payments: [
+		{
+			title: 'Bi-Weekly Payment',
+			value: `$ 483`,
+		},
+		{
+			title: 'Monthly Payment',
+			value: `$ 966`,
+		},
+		{
+			title: 'Weekly Payment',
+			value: `$ 241`,
+		},
+	]
+}
 
 export const state = {
 	images: images,
 	homePage: homePage,
+	calcPage: calcPage,
 }
 

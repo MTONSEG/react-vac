@@ -16,7 +16,7 @@ export const InputRange = props => {
 	}
 
 	const renderThumbHandler = (obj) => (
-		<div {...obj} className="range-slider__btn"></div>
+		<div {...obj} className="range-slider__btn" aria-label="range-slider"></div>
 	)
 
 	const onChangeValueHandler = (value, index) => {

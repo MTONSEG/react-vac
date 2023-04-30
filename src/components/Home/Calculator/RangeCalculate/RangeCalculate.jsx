@@ -12,7 +12,7 @@ export const RangeCalculate = props => {
 
 	return (
 		<div className={`${props.className} calc-range`}>
-			<ul className="calc-range__filter">
+			<div className="calc-range__filter">
 				<RadioRangeCalculate
 					className="calc-range__radio"
 					name="radio-range-calc"
@@ -34,7 +34,7 @@ export const RangeCalculate = props => {
 					check={radioValue}
 					setCheck={onChangeRadioHandle}
 				/>
-			</ul>
+			</div>
 			<div className="calc-range__inputs">
 				<InputRange
 					max={props.state.loanAmount.max}

@@ -7,6 +7,8 @@ export function Picture({ img, webp, ...rest }) {
 		type = 'image/jpeg';
 	}
 
+	let alt = rest.alt ? rest.alt : 'image';
+
 	return (
 		<picture>
 			{
@@ -41,7 +43,7 @@ export function Picture({ img, webp, ...rest }) {
 			}
 			<source srcSet={webp} type='image/webp' />
 			{/* <source srcSet={img} type={type} /> */}
-			<img className={rest.className} src={img} alt={rest.alt} />
+			<img className={rest.className} src={img} alt={alt} />
 		</picture>
 	)
 }

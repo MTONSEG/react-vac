@@ -17,9 +17,12 @@ module.exports = {
 		path: path.resolve(__dirname, './build'),
 		filename: 'js/app.[hash].js',
 		clean: true,
+		publicPath: '/'
 	},
 	devServer: {
-		allowedHosts: ['host.com']
+		open: true,
+		port: 8080,
+		historyApiFallback: true
 	},
 	plugins: [
 		new webpack.HotModuleReplacementPlugin(),
