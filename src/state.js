@@ -53,6 +53,16 @@ import imgInteresting2 from './assets/images/home_interest-img2.jpg';
 import imgInteresting2Webp from './assets/images/home_interest-img2.jpg?as=webp';
 import imgInteresting3 from './assets/images/home_interest-img3.jpg';
 import imgInteresting3Webp from './assets/images/home_interest-img3.jpg?as=webp';
+//Videos page
+import imgPoster1 from './assets/images/video_poster-1.jpg';
+import imgPoster1Webp from './assets/images/video_poster-1.jpg?as=webp';
+import imgPoster2 from './assets/images/video_poster-2.jpg';
+import imgPoster2Webp from './assets/images/video_poster-2.jpg?as=webp';
+import imgPoster3 from './assets/images/video_poster-3.jpg';
+import imgPoster3Webp from './assets/images/video_poster-3.jpg?as=webp';
+import imgPoster4 from './assets/images/video_poster-4.jpg';
+import imgPoster4Webp from './assets/images/video_poster-4.jpg?as=webp';
+import iconPlay from './assets/icons/play.svg';
 
 const images = {
 	logo: logo,
@@ -102,6 +112,17 @@ const images = {
 		imgInteresting2Webp: imgInteresting2Webp,
 		imgInteresting3: imgInteresting3,
 		imgInteresting3Webp: imgInteresting3Webp,
+	},
+	videosPage: {
+		imgPoster1: imgPoster1,
+		imgPoster1Webp: imgPoster1Webp,
+		imgPoster2: imgPoster2,
+		imgPoster2Webp: imgPoster2Webp,
+		imgPoster3: imgPoster3,
+		imgPoster3Webp: imgPoster3Webp,
+		imgPoster4: imgPoster4,
+		imgPoster4Webp: imgPoster4Webp,
+		iconPlay:iconPlay,
 	}
 }
 
@@ -369,10 +390,53 @@ const calcPage = {
 		},
 	]
 }
+const videosPage = {
+	bigTitle: 'Vehicle videos',
+	icon: images.videosPage.iconPlay,
+	list: [
+		{
+			id: v1(),
+			title: `VAC's Vehicle Shoot #10: 2018 Chevy Cruze Hatchback`,
+			poster: {
+				img: images.videosPage.imgPoster1,
+				webp: images.videosPage.imgPoster1Webp,
+			},
+			video: 'https://www.youtube.com/embed/zHar3VlO7UY'
+		},
+		{
+			id: v1(),
+			title: `VAC's Vehicle Shoot #09: 2019 Mazda CX-5`,
+			poster: {
+				img: images.videosPage.imgPoster3,
+				webp: images.videosPage.imgPoster3Webp,
+			},
+			video: 'https://www.youtube.com/embed/tfh5LA_OddY'
+		},
+		{
+			id: v1(),
+			title: `VAC's Vehicle Shoot #11: Toyota Highlander`,
+			poster: {
+				img: images.videosPage.imgPoster2,
+				webp: images.videosPage.imgPoster2Webp,
+			},
+			video: 'https://www.youtube.com/embed/Q39XU6GgmNc'
+		},
+		{
+			id: v1(),
+			title: `Some Vehicles VAC Offers!`,
+			poster: {
+				img: images.videosPage.imgPoster4,
+				webp: images.videosPage.imgPoster4Webp,
+			},
+			video: 'https://www.youtube.com/embed/Xbe3HIFx-f0'
+		},
+	]
+}
 
 export const state = {
 	images: images,
 	homePage: homePage,
 	calcPage: calcPage,
+	videosPage:videosPage
 }
 

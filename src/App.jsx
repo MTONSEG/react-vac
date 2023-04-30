@@ -5,6 +5,7 @@ import { Footer } from "./components/UI/Footer/Footer.jsx";
 import { Header } from "./components/UI/Header/Header.jsx";
 import { Home } from "./components/Home/Home.jsx";
 import { CalcPage } from "./components/CalcPage/CalcPage.jsx";
+import { VehicleVideos } from "./components/VehicleVideos/VehicleVideos.jsx";
 
 export function App({ store }) {
 
@@ -15,8 +16,15 @@ export function App({ store }) {
 		<div className="wrapper">
 			<Header logo={state.images.logo} />
 			<Routes>
-				<Route path="/" element={<Home state={state.homePage} />} />
-				<Route path="calc" element={<CalcPage state={state.calcPage} />} />
+				<Route path="/" element={<Home
+					state={state.homePage}
+				/>} />
+				<Route path="calc" element={<CalcPage
+					state={state.calcPage}
+				/>} />
+				<Route path="videos" element={<VehicleVideos
+					state={state.videosPage}
+				/>} />
 				<Route path="*" element={<p>this page is not</p>} />
 			</Routes>
 			<Footer images={
