@@ -72,6 +72,16 @@ import imgAboutSuv from './assets/images/about_suv.png';
 import imgAboutSuvWebp from './assets/images/about_suv.png?as=webp';
 import imgAboutSuvM from './assets/images/about_suv.png';
 import imgAboutSuvWebpM from './assets/images/about_suv_mob.png?as=webp';
+import imgTeamPhoto from './assets/images/about__team-photo.jpg';
+import imgTeamPhotoWebp from './assets/images/about__team-photo.jpg?as=webp';
+import imgTeamPhotoT from './assets/images/about__team-photo_tab.jpg';
+import imgTeamPhotoWebpT from './assets/images/about__team-photo_tab.jpg?as=webp';
+import imgTeamPhotoM from './assets/images/about__team-photo_mob.jpg';
+import imgTeamPhotoWebpM from './assets/images/about__team-photo_mob.jpg?as=webp';
+import imgFeaturesPhoto from './assets/images/about_features.jpg';
+import imgFeaturesPhotoWebp from './assets/images/about_features.jpg';
+import imgFeaturesPhotoM from './assets/images/about_features_mob.jpg';
+import imgFeaturesPhotoWebpM from './assets/images/about_features_mob.jpg';
 
 
 const images = {
@@ -142,7 +152,17 @@ const images = {
 		imgAboutSuv: imgAboutSuv,
 		imgAboutSuvWebp: imgAboutSuvWebp,
 		imgAboutSuvM: imgAboutSuvM,
-		imgAboutSuvWebpM: imgAboutSuvWebpM
+		imgAboutSuvWebpM: imgAboutSuvWebpM,
+		imgTeamPhoto: imgTeamPhoto,
+		imgTeamPhotoWebp: imgTeamPhotoWebp,
+		imgTeamPhotoT: imgTeamPhotoT,
+		imgTeamPhotoWebpT: imgTeamPhotoWebpT,
+		imgTeamPhotoM: imgTeamPhotoM,
+		imgTeamPhotoWebpM: imgTeamPhotoWebpM,
+		imgFeaturesPhoto: imgFeaturesPhoto,
+		imgFeaturesPhotoWebp: imgFeaturesPhotoWebp,
+		imgFeaturesPhotoM: imgFeaturesPhotoM,
+		imgFeaturesPhotoWebpM: imgFeaturesPhotoWebpM,
 	}
 }
 
@@ -510,11 +530,68 @@ const aboutPage = {
 		text: {
 			1: 'Not only is buying a car with VAC easy, it’s also the best way to save money. We have partnerships with Canada’s largest lenders. That allows us to help you secure loans at the best interest rates available.',
 			2: 'Because convenience and transparency are our founding principles, we take the time to answer all of your questions about the vehicle and the auto loan. We will send you pictures and videos of any part of the car you like before you request a test drive.',
-			3: 'We think that VAC is the best way to buy and money you can save.',
+			3: 'We think that VAC is the best way to buy a car in Canada. Try it for yourself and see how much time and money you can save.',
 			4: 'There are never any hidden fees or costs. We never ask you to sign anything until we have explained it clearly and you have had a chance to read it.'
 		},
 		titleBtn: 'Request a Car'
-	}
+	},
+	qualifiedAgents: {
+		title: 'Our qualified agents',
+		subtitle: 'Contact us today and speak with one of our qualified agents',
+		titleBtn: 'Contact Us Now',
+		text: {
+			1: 'The true secret to success of VAC isn’t our streamlined purchasing and financing processes. The real reason VAC is the easiest and best way to buy a car in Canada is because of our outstanding Qualified Agents.',
+			2: 'Our team provides you with the best customer experience in the automotive industry. You work with a dedicated representative throughout the process. They are able to answer any questions you have about any of our vehicles or the financing. Are you interested in seeing pictures or videos of a car? Your qualified agent will send them to you.'
+		}
+
+	},
+	commentsSlider: homePage.commentsSlider,
+	dynamicTeam: {
+		title: `We're dynamic team of creative people with innovative mind`,
+		image: {
+			img: images.aboutPage.imgTeamPhoto,
+			webp: images.aboutPage.imgTeamPhotoWebp,
+			imgT: images.aboutPage.imgTeamPhotoT,
+			webpT: images.aboutPage.imgTeamPhotoWebpT,
+			imgM: images.aboutPage.imgTeamPhotoM,
+			webpM: images.aboutPage.imgTeamPhotoWebpM
+		},
+		textList: {
+			history: {
+				title: 'Our History',
+				text: 'We founded VAC because we hated how complicated it was to buy a car. You only have so much free time in your life. You don’t want to waste it going to different car dealerships every weekend for weeks and months trying to track down the right car.'
+			},
+			goal: {
+				title: 'Our Goal',
+				text: 'Buying a car has never been easier. You pick out the car you want on our website. You work with one of our Qualified Agents to secure financing. Then we bring the car to you—all before you sign anything. You test drive the vehicle, and if you like it, you sign the loan documents right there and the car is yours. '
+			}
+		},
+	},
+	features: {
+		title: 'Main features',
+		text: 'We are your one stop shop. We believe that vehicle shopping should be a fun and painless process and with years of experience, we make it just that.',
+		image: {
+			img: images.aboutPage.imgFeaturesPhoto,
+			webp: images.aboutPage.imgFeaturesPhotoWebp,
+			imgM: images.aboutPage.imgFeaturesPhotoM,
+			webpM: images.aboutPage.imgFeaturesPhotoWebpM,
+		},
+		cards: [
+			{
+				num: '7,988+',
+				text: 'Sold Cars'
+			},
+			{
+				num: '123',
+				text: 'Working Experts'
+			},
+			{
+				num: '1560+',
+				text: 'Happy Clients'
+			},
+		]
+	},
+	calculator: homePage.calculator
 }
 
 export const state = {
