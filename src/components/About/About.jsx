@@ -3,6 +3,7 @@ import './About.scss';
 import { TitlePages } from "../UI/TitlePages/TitlePages.jsx";
 import { MissionAbout } from "./MissionAbout/MissionAbout.jsx";
 import { DreamCarAbout } from "./DreamCarAbout/DreamCarAbout.jsx";
+import { TransparencyAbout } from "./TransparencyAbout/TransparencyAbout.jsx";
 
 export const About = ({ state }) => {
 	return (
@@ -18,6 +19,10 @@ export const About = ({ state }) => {
 							state={state.dreamCar}
 						/>
 					</div>
+					<div className="about__transparency">
+						<TransparencyAbout state={state.transparency}/>
+					</div>
+					<div className="about__best-prices"></div>
 				</div>
 			</div>
 		</>
