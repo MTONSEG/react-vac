@@ -6,6 +6,7 @@ import { Header } from "./components/UI/Header/Header.jsx";
 import { Home } from "./components/Home/Home.jsx";
 import { CalcPage } from "./components/CalcPage/CalcPage.jsx";
 import { VehicleVideos } from "./components/VehicleVideos/VehicleVideos.jsx";
+import { About } from "./components/About/About.jsx";
 
 export function App({ store }) {
 
@@ -24,6 +25,9 @@ export function App({ store }) {
 				/>} />
 				<Route path="videos" element={<VehicleVideos
 					state={state.videosPage}
+				/>} />
+				<Route path="about" element={<About
+					state={state.aboutPage}
 				/>} />
 				<Route path="*" element={<p>this page is not</p>} />
 			</Routes>

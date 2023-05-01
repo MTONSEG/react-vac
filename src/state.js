@@ -63,6 +63,16 @@ import imgPoster3Webp from './assets/images/video_poster-3.jpg?as=webp';
 import imgPoster4 from './assets/images/video_poster-4.jpg';
 import imgPoster4Webp from './assets/images/video_poster-4.jpg?as=webp';
 import iconPlay from './assets/icons/play.svg';
+//About page
+import imgMission from './assets/images/about_kia.png';
+import imgMissionWebp from './assets/images/about_kia.png?as=webp';
+import imgMissionM from './assets/images/about_kia_mob.png';
+import imgMissionWebpM from './assets/images/about_kia_mob.png?as=webp';
+import imgAboutSuv from './assets/images/about_suv.png';
+import imgAboutSuvWebp from './assets/images/about_suv.png?as=webp';
+import imgAboutSuvM from './assets/images/about_suv.png';
+import imgAboutSuvWebpM from './assets/images/about_suv_mob.png?as=webp';
+
 
 const images = {
 	logo: logo,
@@ -122,7 +132,17 @@ const images = {
 		imgPoster3Webp: imgPoster3Webp,
 		imgPoster4: imgPoster4,
 		imgPoster4Webp: imgPoster4Webp,
-		iconPlay:iconPlay,
+		iconPlay: iconPlay,
+	},
+	aboutPage: {
+		imgMission: imgMission,
+		imgMissionWebp: imgMissionWebp,
+		imgMissionM: imgMissionM,
+		imgMissionWebpM: imgMissionWebpM,
+		imgAboutSuv: imgAboutSuv,
+		imgAboutSuvWebp: imgAboutSuvWebp,
+		imgAboutSuvM: imgAboutSuvM,
+		imgAboutSuvWebpM: imgAboutSuvWebpM
 	}
 }
 
@@ -432,11 +452,76 @@ const videosPage = {
 		},
 	]
 }
+const aboutPage = {
+	bigTitle: 'About VAC',
+	mission: {
+		title: 'Our mission',
+		text: 'Our mission at VAC is to help you find the perfect car at the perfect price and with the perfect auto loan. We make buying a car simple. You can complete the entire process from home—we’ll even deliver the car to you!',
+		btnTitle: 'Request a Car',
+		image: {
+			img: images.aboutPage.imgMission,
+			webp: images.aboutPage.imgMissionWebp,
+			imgM: images.aboutPage.imgMissionM,
+			webpM: images.aboutPage.imgMissionWebpM,
+		}
+	},
+	dreamCar: {
+		title: 'Get your dream car',
+		text: {
+			1: 'We founded VAC because we hated how complicated it was to buy a car. You only have so much free time in your life. You don’t want to waste it going to different car dealerships every weekend for weeks and months trying to track down the right car.',
+			2: 'We also hated how choosing a car and figuring out the financing for the vehicle were treated as totally separate processes! Instead of dealing with a salesperson, then being handed off to a closer, and then shuffled over to a finance manager, we wanted to create a way for people to buy a car and only deal with a single person for the entire process.'
+		},
+		list: [
+			{
+				id: 1,
+				title: 'Quickly',
+				text: 'You do not spend a lot of your time going to car dealerships',
+				icon: images.homePage.triangleStep
+			},
+			{
+				id: 2,
+				title: 'Simply',
+				text: 'You can order your dream car just by talking to our specialist by phone',
+				icon: images.homePage.triangleStep
+			},
+			{
+				id: 3,
+				title: 'Conveniently',
+				text: 'We will deliver the car directly to the doorstep of your home or office',
+				icon: images.homePage.triangleStep
+			},
+		]
+	},
+	transparency: {
+		title: 'VAC is convenience and transparency',
+		text: {
+			1: 'We want to make simple for you to find the car you want. We also want to make sure you are 100% comfortable with the terms of the conditions of your auto loan.',
+			2: 'Buying a car has never been easier. You pick out the car you want on our website. You work with one of our Qualified Agents to secure financing. Then we bring the car to you—all before you sign anything. You test drive the vehicle, and if you like it, you sign the loan documents right there and the car is yours.'
+		},
+		image: {
+			img: images.aboutPage.imgAboutSuv,
+			webp: images.aboutPage.imgAboutSuvWebp,
+			imgM: images.aboutPage.imgAboutSuvM,
+			webpM: images.aboutPage.imgAboutSuvWebpM,
+		}
+	},
+	bestPrices: {
+		title: 'Get a car at the best prices and conditions',
+		text: {
+			1: 'Not only is buying a car with VAC easy, it’s also the best way to save money. We have partnerships with Canada’s largest lenders. That allows us to help you secure loans at the best interest rates available.',
+			2: 'Because convenience and transparency are our founding principles, we take the time to answer all of your questions about the vehicle and the auto loan. We will send you pictures and videos of any part of the car you like before you request a test drive.',
+			3: 'We think that VAC is the best way to buy and money you can save.',
+			4: 'There are never any hidden fees or costs. We never ask you to sign anything until we have explained it clearly and you have had a chance to read it.'
+		},
+		titleBtn: 'Request a Car'
+	}
+}
 
 export const state = {
 	images: images,
 	homePage: homePage,
 	calcPage: calcPage,
-	videosPage:videosPage
+	videosPage: videosPage,
+	aboutPage: aboutPage
 }
 
