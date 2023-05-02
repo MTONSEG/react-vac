@@ -82,6 +82,18 @@ import imgFeaturesPhoto from './assets/images/about_features.jpg';
 import imgFeaturesPhotoWebp from './assets/images/about_features.jpg';
 import imgFeaturesPhotoM from './assets/images/about_features_mob.jpg';
 import imgFeaturesPhotoWebpM from './assets/images/about_features_mob.jpg';
+// Loan Rates images
+import imgPickup from './assets/images/loan-rates_pickup.png';
+import imgPickupWebp from './assets/images/loan-rates_pickup.png?as=webp';
+import imgPickupM from './assets/images/loan-rates_pickup_mob.png';
+import imgPickupWebpM from './assets/images/loan-rates_pickup_mob.png?as=webp';
+
+import imgBenefitSuv from './assets/images/loan-rates_suv.png';
+import imgBenefitSuvWebp from './assets/images/loan-rates_suv.png?as=webp';
+import imgBenefitSuvM from './assets/images/loan-rates_suv_mob.png';
+import imgBenefitSuvWebpM from './assets/images/loan-rates_suv_mob.png?as=webp'
+import iconPercent from './assets/icons/percent.svg';
+import iconClock from './assets/icons/clock.svg';
 
 
 const images = {
@@ -163,10 +175,22 @@ const images = {
 		imgFeaturesPhotoWebp: imgFeaturesPhotoWebp,
 		imgFeaturesPhotoM: imgFeaturesPhotoM,
 		imgFeaturesPhotoWebpM: imgFeaturesPhotoWebpM,
+	},
+	loanRates: {
+		imgPickup: imgPickup,
+		imgPickupWebp: imgPickupWebp,
+		imgPickupM: imgPickupM,
+		imgPickupWebpM: imgPickupWebpM,
+		imgBenefitSuv: imgBenefitSuv,
+		imgBenefitSuvWebp: imgBenefitSuvWebp,
+		imgBenefitSuvM: imgBenefitSuvM,
+		imgBenefitSuvWebpM: imgBenefitSuvWebpM,
+		iconPercent: iconPercent,
+		iconClock: iconClock,
 	}
 }
 
-const homePage = {
+let homePage = {
 	hero: {
 		title: 'The easiest way to buy a car in Canada',
 		icon: images.homePage.iconBtn,
@@ -401,7 +425,7 @@ const homePage = {
 		]
 	}
 }
-const calcPage = {
+let calcPage = {
 	bigTitle: 'Use our free calculator!',
 	title: 'Let’s figure out how much you can afford',
 	text: 'Before you start shopping, let’s figure out how much you can afford. Move the sliders to see how the loan duration and the total loan amount affect your monthly payments.',
@@ -430,7 +454,7 @@ const calcPage = {
 		},
 	]
 }
-const videosPage = {
+let videosPage = {
 	bigTitle: 'Vehicle videos',
 	icon: images.videosPage.iconPlay,
 	list: [
@@ -472,7 +496,7 @@ const videosPage = {
 		},
 	]
 }
-const aboutPage = {
+let aboutPage = {
 	bigTitle: 'About VAC',
 	mission: {
 		title: 'Our mission',
@@ -593,12 +617,57 @@ const aboutPage = {
 	},
 	calculator: homePage.calculator
 }
+let loanRates = {
+	bigTitle: 'Loan rates',
+	credit: {
+		title: 'Our credit policy',
+		text: 'You want to secure a loan that works for your budget. Here at VAC we work with Canada’s largest lenders to help you find the best interest rates and terms for your auto loan.',
+		btnTitle: 'Request a Car',
+		image: {
+			img: images.loanRates.imgPickup,
+			imgM: images.loanRates.imgPickupM,
+			webp: images.loanRates.imgPickupWebp,
+			webpM: images.loanRates.imgPickupWebpM,
+		}
+	},
+	termsRates: {
+		title: 'Interest rates and loan terms',
+		list: [
+			{
+				title: 'What are my interest rate options?',
+				text: 'We work to secure customized auto loans from Canada’s largest lenders. Your interest rate is critical for determining the total cost of your auto financing. Interest rates are based on many factors including the loan amount, your credit score, and your budget. We help you find the lowest interest rates available for your auto loan.',
+				icon: images.loanRates.iconPercent,
+			},
+			{
+				title: 'How long will my loan term be?',
+				text: 'Our goal is to find the right car and the right loan for you. Because we have relationships with so many different lenders, we can help you find the right term length for your budget. The longer the loan is, often the lower the monthly payments will be—but the more expensive the loan will be overall. Most of the loans we secure for our clients are between 36 and 72 months.',
+				icon: images.loanRates.iconClock,
+			},
+		]
+	},
+	benefits: {
+		title: 'Benefits of getting an auto loan with VAC',
+		titleBtn: 'Request a Car',
+		image: {
+			img: images.loanRates.imgBenefitSuv,
+			imgM: images.loanRates.imgBenefitSuvM,
+			webp: images.loanRates.imgBenefitSuvWebp,
+			webpM: images.loanRates.imgBenefitSuvWebpM,
+		},
+		text: [
+			'For many people getting a reasonable auto loan is the best way for them to get a new car. However, the benefits of getting the right loan go beyond just being able to drive a nice vehicle.',
+			'When you work with VAC, there are never any hidden costs or fees! We lay out all the terms and conditions so that you know exactly what details of the loan are before you sign anything.'
+		]
+	},
+	calculator: homePage.calculator
+}
 
 export const state = {
 	images: images,
 	homePage: homePage,
 	calcPage: calcPage,
 	videosPage: videosPage,
-	aboutPage: aboutPage
+	aboutPage: aboutPage,
+	loanRates: loanRates
 }
 

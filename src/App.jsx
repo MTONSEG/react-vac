@@ -7,6 +7,7 @@ import { Home } from "./components/Home/Home.jsx";
 import { CalcPage } from "./components/CalcPage/CalcPage.jsx";
 import { VehicleVideos } from "./components/VehicleVideos/VehicleVideos.jsx";
 import { About } from "./components/About/About.jsx";
+import { LoanRates } from "./components/LoanRates/LoanRates.jsx";
 
 export function App({ store }) {
 
@@ -28,6 +29,9 @@ export function App({ store }) {
 				/>} />
 				<Route path="about" element={<About
 					state={state.aboutPage}
+				/>} />
+				<Route path="rates" element={<LoanRates
+					state={state.loanRates}
 				/>} />
 				<Route path="*" element={<p>this page is not</p>} />
 			</Routes>
