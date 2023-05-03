@@ -11,6 +11,7 @@ import { LoanRates } from "./components/LoanRates/LoanRates.jsx";
 import { NotFoundPage } from "./components/Page404/Page404.jsx";
 import { Blog } from "./components/Blog/Blog.jsx";
 import { FirstArticle } from "./components/Blog/Articles/FirstArticle.jsx";
+import { SecondArticle } from "./components/Blog/Articles/SecondArticle.jsx";
 
 export function App({ store }) {
 
@@ -40,6 +41,9 @@ export function App({ store }) {
 					state={state.blogPage}
 				/>} />
 				<Route path="article/1" element={<FirstArticle
+					state={state.articlesPage}
+				/>} />
+				<Route path="article/2" element={<SecondArticle
 					state={state.articlesPage}
 				/>} />
 				<Route path="*" element={

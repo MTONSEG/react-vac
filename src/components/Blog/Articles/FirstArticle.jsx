@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { InterestingRead } from "../../Home/InterestingRead/InterestingRead.jsx";
 import './Articles.scss';
 
@@ -9,6 +10,10 @@ export const FirstArticle = ({ state }) => {
 			<div className="article__header"></div>
 			<div className="container">
 				<article className="article__body">
+					<Link to='/blog' className="article__link">
+						<img src={state.icon} alt="back"/>
+						<span>back</span>
+					</Link>
 					<p className="article__date text">
 						{data.date}
 					</p>
@@ -16,7 +21,7 @@ export const FirstArticle = ({ state }) => {
 						{data.title}
 					</h1>
 					<div className="article__text-wrap">
-						<p className="article__text text">
+						<p className="article__text article__text_first text">
 							{data.text[0]}
 						</p>
 						<p className="article__text text">
