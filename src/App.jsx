@@ -14,15 +14,24 @@ import { FirstArticle } from "./components/Blog/Articles/FirstArticle.jsx";
 import { SecondArticle } from "./components/Blog/Articles/SecondArticle.jsx";
 import { Terms } from "./components/TermsPrivacy/Terms.jsx";
 import { Privacy } from "./components/TermsPrivacy/Privacy.jsx";
+import { MenuModal } from "./components/UI/Modals/MenuModal.jsx";
+import { ContactModal } from "./components/UI/Modals/ContactModal.jsx";
 
 export function App({ store }) {
 
 	let [state, setState] = useState(store);
-
+	let [showMenu, setShowMenu] = useState(false);
+	let [showRequest, setShowRequest] = useState(false);
 
 	return (
 		<div className="wrapper">
-			<Header logo={state.images.logo} />
+			<Header
+				logo={state.images.logo}
+				showMenu={showMenu}
+				setShowMenu={setShowMenu}
+				showRequest={showRequest}
+				setShowRequest={setShowRequest}
+			/>
 			<Routes>
 				<Route path="/" element={<Home
 					state={state.homePage}
@@ -68,7 +77,16 @@ export function App({ store }) {
 				}
 			} />
 
-			
+			<MenuModal
+				state={state.modals}
+				showMenu={showMenu}
+				setShowMenu={setShowMenu}
+			/>
+			<ContactModal
+				state={state.modals}
+				showMenu={showRequest}
+				setShowMenu={setShowRequest}
+			/>
 		</div>
 	)
 }

@@ -6,6 +6,10 @@ import logoCompany from './assets/icons/creator-logo.svg';
 import iconInstagram from './assets/icons/instagram.svg';
 import iconFacebook from './assets/icons/facebook.svg';
 import iconYoutube from './assets/icons/youtube.svg';
+import iconInstagramColor from './assets/icons/instagram_color.svg';
+import iconFacebookColor from './assets/icons/facebook_color.svg';
+import iconYoutubeColor from './assets/icons/youtube_color.svg';
+import iconMailSoc from './assets/icons/mail-soc.svg';
 //hero slider images 
 import carSuv from './assets/images/home_suv.png';
 import carSuvWebp from './assets/images/home_suv.png?as=webp';
@@ -133,6 +137,11 @@ import picArticleCar4Webp from './assets/images/article_car4.jpg?as=webp';
 import iconArrowBack from './assets/icons/arrow-back.svg';
 //Accordion Arrow icon
 import accordionArrow from './assets/icons/accordion-arr.svg';
+//Close Modals icon
+import iconClose from './assets/icons/close.svg';
+import iconUser from './assets/icons/user.svg';
+import iconPhone from './assets/icons/phone.svg';
+import iconMail from './assets/icons/mail.svg';
 
 const images = {
 	logo: logo,
@@ -141,7 +150,12 @@ const images = {
 	iconInstagram: iconInstagram,
 	iconFacebook: iconFacebook,
 	iconYoutube: iconYoutube,
+	iconMailSoc: iconMailSoc,
+	iconInstagramColor: iconInstagramColor,
+	iconFacebookColor: iconFacebookColor,
+	iconYoutubeColor: iconYoutubeColor,
 	accordionArrow: accordionArrow,
+	iconClose: iconClose,
 	homePage: {
 		carSuv: carSuv,
 		carSuvWebp: carSuvWebp,
@@ -266,6 +280,11 @@ const images = {
 		picArticleCar4: picArticleCar4,
 		picArticleCar4Webp: picArticleCar4Webp,
 		iconArrowBack: iconArrowBack,
+	},
+	modals: {
+		iconUser: iconUser,
+		iconPhone: iconPhone,
+		iconMail: iconMail
 	}
 }
 
@@ -1068,6 +1087,24 @@ let termsPolicy = {
 		]
 	}
 }
+let modals = {
+	icons: {
+		close: images.iconClose,
+		insta: images.iconInstagramColor,
+		fb: images.iconFacebookColor,
+		yt: images.iconYoutubeColor,
+		mailSoc: images.iconMailSoc,
+		user: images.modals.iconUser,
+		phone: images.modals.iconPhone,
+		mail: images.modals.iconMail
+	},
+	contacts: {
+		title: `We can't wait to hear from you!`,
+		subtitle: 'You can contact us yourself',
+		titleBtn: 'contact me'
+	}
+
+}
 
 export const state = {
 	images: images,
@@ -1080,4 +1117,5 @@ export const state = {
 	blogPage: blogPage,
 	articlesPage: articlesPage,
 	termsPolicy: termsPolicy,
+	modals: modals,
 }
