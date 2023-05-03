@@ -131,6 +131,8 @@ import picArticleCar3Webp from './assets/images/article_car3.jpg?as=webp';
 import picArticleCar4 from './assets/images/article_car4.jpg';
 import picArticleCar4Webp from './assets/images/article_car4.jpg?as=webp';
 import iconArrowBack from './assets/icons/arrow-back.svg';
+//Accordion Arrow icon
+import accordionArrow from './assets/icons/accordion-arr.svg';
 
 const images = {
 	logo: logo,
@@ -139,6 +141,7 @@ const images = {
 	iconInstagram: iconInstagram,
 	iconFacebook: iconFacebook,
 	iconYoutube: iconYoutube,
+	accordionArrow:accordionArrow,
 	homePage: {
 		carSuv: carSuv,
 		carSuvWebp: carSuvWebp,
@@ -930,6 +933,112 @@ let articlesPage = {
 		]
 	},
 }
+let termsPolicy = {
+	terms: {
+		bigTitle: 'Terms & Conditions',
+		icon: images.accordionArrow,
+		list: [
+			{
+				id: v1(),
+				title: 'Please read these terms and conditions of use carefully before using this web site',
+				text: 'Vehicle Approval Centre may, in its sole discretion and for any reason, modify, supplement or amend these Terms and Conditions without any notice or liability to you or any other person, by posting revised Terms and Conditions on the Vehicle Approval Centre website. Your continued use of the Vehicle Approval Centre website signifies your acceptance of such revised Terms and Conditions.'
+			},
+			{
+				id: v1(),
+				title: 'Modifications of the terms and conditions',
+				text: 'Vehicle Approval Centre may, in its sole discretion and for any reason, modify, supplement or amend these Terms and Conditions without any notice or liability to you or any other person, by posting revised Terms and Conditions on the Vehicle Approval Centre website. Your continued use of the Vehicle Approval Centre website signifies your acceptance of such revised Terms and Conditions. '
+			},
+			{
+				id: v1(),
+				title: 'How we work',
+				text: 'Vehicle Approval Centre may, in its sole discretion and for any reason, modify, supplement or amend these Terms and Conditions without any notice or liability to you or any other person, by posting revised Terms and Conditions on the Vehicle Approval Centre website. Your continued use of the Vehicle Approval Centre website signifies your acceptance of such revised Terms and Conditions. '
+			},
+			{
+				id: v1(),
+				title: 'Authorization',
+				text: 'Vehicle Approval Centre may, in its sole discretion and for any reason, modify, supplement or amend these Terms and Conditions without any notice or liability to you or any other person, by posting revised Terms and Conditions on the Vehicle Approval Centre website. Your continued use of the Vehicle Approval Centre website signifies your acceptance of such revised Terms and Conditions. '
+			},
+			{
+				id: v1(),
+				title: 'Links',
+				text: 'Quis aliquip nulla nostrud amet ipsum laborum ex. Irure officia amet magna ea magna eiusmod dolor et. Enim sit veniam irure nisi officia do occaecat elit excepteur deserunt. Nulla mollit incididunt enim culpa officia ea mollit occaecat minim.'
+			},
+			{
+				id: v1(),
+				title: 'Minors',
+				text: 'Ad labore ad sit non aute velit nulla tempor esse adipisicing ipsum nostrud dolor. Non proident quis consectetur quis adipisicing esse. Do do cillum elit adipisicing ullamco. Qui laborum consectetur occaecat culpa ipsum enim labore veniam cillum. Nisi Lorem consequat enim excepteur et ex minim ipsum dolor proident ipsum. Nulla in ipsum duis magna. Amet quis adipisicing ea id mollit pariatur proident nulla consequat anim.'
+			},
+			{
+				id: v1(),
+				title: 'Restricted access',
+				text: 'Labore cupidatat dolor esse ea nulla voluptate magna sit pariatur cillum pariatur. Occaecat dolore eiusmod consequat velit adipisicing proident elit enim est esse in. Enim cupidatat duis elit anim dolore ex anim quis consequat aliqua sit qui occaecat ipsum. Culpa occaecat cupidatat laboris aliqua pariatur ullamco voluptate est velit. Incididunt ea magna sit voluptate anim elit. Dolore excepteur nisi veniam amet reprehenderit tempor fugiat non laboris dolore nostrud non. Veniam dolore sunt aliqua mollit consequat mollit occaecat.'
+			},
+			{
+				id: v1(),
+				title: 'Governing law',
+				text: 'Magna ullamco consequat consequat officia officia nisi. Mollit esse aute aute aliqua duis laborum. Commodo eiusmod cillum veniam tempor ullamco Lorem in mollit ullamco laborum eu do. Occaecat fugiat sunt veniam culpa magna id. Labore voluptate enim occaecat duis ullamco in officia sint sunt est tempor culpa. Laborum sunt in proident et aliquip pariatur ad duis ex irure.'
+			},
+			{
+				id: v1(),
+				title: 'Privacy policy',
+				text: 'Do nisi incididunt consectetur consequat laborum minim deserunt nostrud incididunt. Veniam deserunt ex amet id est pariatur. Do aliquip Lorem aliqua ea officia ipsum ipsum cillum dolor cupidatat ex excepteur. Tempor duis amet consectetur aute fugiat duis ad culpa et eu eiusmod est eu fugiat. Aliquip cillum anim laborum officia veniam eu sint deserunt labore amet labore. Ullamco id fugiat laborum enim ut amet et ea eu eu officia veniam fugiat. Commodo amet qui cillum reprehenderit.'
+			},
+			{
+				id: v1(),
+				title: 'Personal information',
+				text: 'Aute ut cupidatat labore esse ex duis quis id ad consectetur cupidatat. Ut adipisicing magna elit ut fugiat. Reprehenderit pariatur do tempor ullamco veniam nisi laboris ex.'
+			},
+			{
+				id: v1(),
+				title: 'Collecting personal information',
+				text: 'Minim excepteur ipsum occaecat irure adipisicing nulla laborum aute minim consequat. Aliqua cupidatat laboris proident ullamco sit ipsum eiusmod commodo sit irure. Aute duis ex minim cillum nulla ullamco ullamco non incididunt exercitation amet ea Lorem. Consequat proident sint officia consectetur labore.'
+			},
+			{
+				id: v1(),
+				title: 'Using and sharing personal information',
+				text: 'Dolore aliqua occaecat laborum sit laboris dolore dolor deserunt ipsum cupidatat anim adipisicing. Reprehenderit laborum do minim fugiat exercitation qui anim qui ea voluptate proident. Dolor ullamco proident consequat esse proident sit quis enim pariatur cupidatat et nostrud sint dolore. Occaecat do deserunt pariatur deserunt ea dolor deserunt.'
+			},
+			{
+				id: v1(),
+				title: 'Sharing your personal information',
+				text: 'Occaecat adipisicing mollit dolore tempor qui aliquip cupidatat ex aute labore. Adipisicing sint consectetur exercitation Lorem exercitation. Officia ipsum incididunt duis aliqua quis elit proident est sint. Non qui occaecat officia cupidatat minim consequat commodo. Ad duis reprehenderit eu tempor non sint veniam ullamco aute eu Lorem eiusmod magna. Elit eiusmod pariatur adipisicing eiusmod quis aliquip ipsum occaecat adipisicing minim reprehenderit. Irure laborum aliquip sunt anim ullamco.'
+			},
+			{
+				id: v1(),
+				title: 'Retaining your personal information',
+				text: 'Excepteur ea ullamco eiusmod veniam aliquip aliqua. Ex id ea nisi commodo et est occaecat minim sunt dolor proident quis laboris. Incididunt excepteur labore ullamco nisi. Reprehenderit commodo non veniam non eiusmod excepteur pariatur do Lorem non. Eiusmod dolor dolor est esse fugiat velit excepteur reprehenderit laboris officia Lorem. Ad irure nisi nisi laboris eu mollit aute tempor dolor voluptate id Lorem exercitation. Fugiat duis officia aute voluptate do nisi tempor irure aute culpa.'
+			},
+			{
+				id: v1(),
+				title: 'Contacting you',
+				text: 'Cupidatat anim non eu ut aute nulla est ullamco. Ex nisi magna officia et mollit fugiat id dolor tempor velit. Esse ex adipisicing minim sint aliquip. Dolor officia officia in non. Nisi mollit dolore magna voluptate sit ex occaecat exercitation esse deserunt consectetur. Lorem enim non quis in irure irure nisi cupidatat culpa. Lorem reprehenderit exercitation aliqua est labore nulla esse anim consequat non sit sunt.'
+			},
+			{
+				id: v1(),
+				title: 'Accessing your personal information stored by us',
+				text: 'Quis dolore voluptate excepteur commodo labore laborum proident cupidatat qui aliquip enim. Deserunt pariatur consequat amet magna consectetur. Sunt qui pariatur voluptate consectetur do commodo amet pariatur ad sit do.'
+			},
+			{
+				id: v1(),
+				title: 'Responding to privacy concerns or complaints',
+				text: 'Ullamco cillum non est dolore enim pariatur nostrud est Lorem labore Lorem aliqua eiusmod sunt. Consectetur quis amet laborum sunt veniam quis ut in. Mollit officia qui proident consequat ad qui nostrud consequat ad mollit do dolor enim nulla.'
+			},
+
+		]
+	},
+	policy: {
+		bigTitle: 'Privacy Policy',
+		icon: images.accordionArrow,
+		list: [
+			{
+				id: v1(),
+				title: 'Terms',
+				text: 'Vehicle Approval Centre may, in its sole discretion and for any reason, modify, supplement or amend these Terms and Conditions without any notice or liability to you or any other person, by posting revised Terms and Conditions on the Vehicle Approval Centre website. Your continued use of the Vehicle Approval Centre website signifies your acceptance of such revised Terms and Conditions.'
+			},
+
+		]
+	}
+}
 
 export const state = {
 	images: images,
@@ -940,5 +1049,6 @@ export const state = {
 	loanRates: loanRates,
 	notFoundPage: notFoundPage,
 	blogPage: blogPage,
-	articlesPage: articlesPage
+	articlesPage: articlesPage,
+	termsPolicy:termsPolicy,
 }

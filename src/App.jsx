@@ -12,6 +12,7 @@ import { NotFoundPage } from "./components/Page404/Page404.jsx";
 import { Blog } from "./components/Blog/Blog.jsx";
 import { FirstArticle } from "./components/Blog/Articles/FirstArticle.jsx";
 import { SecondArticle } from "./components/Blog/Articles/SecondArticle.jsx";
+import { Terms } from "./components/Terms/Terms.jsx";
 
 export function App({ store }) {
 
@@ -45,6 +46,10 @@ export function App({ store }) {
 				/>} />
 				<Route path="article/2" element={<SecondArticle
 					state={state.articlesPage}
+				/>} />
+
+				<Route path="terms" element={<Terms
+					state={state.termsPolicy.terms}
 				/>} />
 				<Route path="*" element={
 					<NotFoundPage state={state.notFoundPage} />
