@@ -141,7 +141,7 @@ const images = {
 	iconInstagram: iconInstagram,
 	iconFacebook: iconFacebook,
 	iconYoutube: iconYoutube,
-	accordionArrow:accordionArrow,
+	accordionArrow: accordionArrow,
 	homePage: {
 		carSuv: carSuv,
 		carSuvWebp: carSuvWebp,
@@ -1026,7 +1026,7 @@ let termsPolicy = {
 
 		]
 	},
-	policy: {
+	privacy: {
 		bigTitle: 'Privacy Policy',
 		icon: images.accordionArrow,
 		list: [
@@ -1035,7 +1035,36 @@ let termsPolicy = {
 				title: 'Terms',
 				text: 'Vehicle Approval Centre may, in its sole discretion and for any reason, modify, supplement or amend these Terms and Conditions without any notice or liability to you or any other person, by posting revised Terms and Conditions on the Vehicle Approval Centre website. Your continued use of the Vehicle Approval Centre website signifies your acceptance of such revised Terms and Conditions.'
 			},
-
+			{
+				id: v1(),
+				title: 'Authorization',
+				text: 'Vehicle Approval Centre may, in its sole discretion and for any reason, modify, supplement or amend these Terms and Conditions without any notice or liability to you or any other person, by posting revised Terms and Conditions on the Vehicle Approval Centre website. Your continued use of the Vehicle Approval Centre website signifies your acceptance of such revised Terms and Conditions. '
+			},
+			{
+				id: v1(),
+				title: 'Links',
+				text: 'Vehicle Approval Centre may, in its sole discretion and for any reason, modify, supplement or amend these Terms and Conditions without any notice or liability to you or any other person, by posting revised Terms and Conditions on the Vehicle Approval Centre website. Your continued use of the Vehicle Approval Centre website signifies your acceptance of such revised Terms and Conditions. '
+			},
+			{
+				id: v1(),
+				title: 'Site terms of use modifications',
+				text: 'Vehicle Approval Centre may, in its sole discretion and for any reason, modify, supplement or amend these Terms and Conditions without any notice or liability to you or any other person, by posting revised Terms and Conditions on the Vehicle Approval Centre website. Your continued use of the Vehicle Approval Centre website signifies your acceptance of such revised Terms and Conditions. '
+			},
+			{
+				id: v1(),
+				title: 'Governing law',
+				text: 'Quis aliquip nulla nostrud amet ipsum laborum ex. Irure officia amet magna ea magna eiusmod dolor et. Enim sit veniam irure nisi officia do occaecat elit excepteur deserunt. Nulla mollit incididunt enim culpa officia ea mollit occaecat minim.'
+			},
+			{
+				id: v1(),
+				title: 'How we treat your personal information',
+				text: 'Ad labore ad sit non aute velit nulla tempor esse adipisicing ipsum nostrud dolor. Non proident quis consectetur quis adipisicing esse. Do do cillum elit adipisicing ullamco. Qui laborum consectetur occaecat culpa ipsum enim labore veniam cillum. Nisi Lorem consequat enim excepteur et ex minim ipsum dolor proident ipsum. Nulla in ipsum duis magna. Amet quis adipisicing ea id mollit pariatur proident nulla consequat anim.'
+			},
+			{
+				id: v1(),
+				title: 'Cookies',
+				text: 'Labore cupidatat dolor esse ea nulla voluptate magna sit pariatur cillum pariatur. Occaecat dolore eiusmod consequat velit adipisicing proident elit enim est esse in. Enim cupidatat duis elit anim dolore ex anim quis consequat aliqua sit qui occaecat ipsum. Culpa occaecat cupidatat laboris aliqua pariatur ullamco voluptate est velit. Incididunt ea magna sit voluptate anim elit. Dolore excepteur nisi veniam amet reprehenderit tempor fugiat non laboris dolore nostrud non. Veniam dolore sunt aliqua mollit consequat mollit occaecat.'
+			},
 		]
 	}
 }
@@ -1050,5 +1079,5 @@ export const state = {
 	notFoundPage: notFoundPage,
 	blogPage: blogPage,
 	articlesPage: articlesPage,
-	termsPolicy:termsPolicy,
+	termsPolicy: termsPolicy,
 }

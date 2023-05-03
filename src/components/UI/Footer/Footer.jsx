@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './Footer.scss';
 
 export const Footer = ({ images }) => {
@@ -8,8 +9,18 @@ export const Footer = ({ images }) => {
 				<div className="footer__row">
 					<img loading="lazy" src={images.logo} alt="" className="footer__logo" />
 					<ul className="footer__list-links">
-						<li className="footer__link">Terms</li>
-						<li className="footer__link">Privacy</li>
+						<Link
+							className="footer__link"
+							to='/terms'
+						>
+							Terms
+						</Link>
+						<Link
+							className="footer__link"
+							to='/privacy'
+						>
+							Privacy
+						</Link>
 					</ul>
 					<div className="footer__soc">
 						<a className="footer__soc-link" href="#">
