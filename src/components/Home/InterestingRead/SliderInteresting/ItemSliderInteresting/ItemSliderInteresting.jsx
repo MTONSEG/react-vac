@@ -1,10 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Picture } from "../../../../UI/Picture/Picture.jsx";
 import './ItemSliderInteresting.scss';
 
 export const ItemSliderInteresting = props => {
 	return (
-		<div className="item-interesting">
+		<Link to={props.link}
+			className="item-interesting">
 			<div className="item-interesting__image-wrap">
 				<Picture
 					img={props.img}
@@ -20,6 +22,6 @@ export const ItemSliderInteresting = props => {
 					{props.title}
 				</h2>
 			</div>
-		</div>
+		</Link>
 	)
 }

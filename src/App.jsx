@@ -8,6 +8,9 @@ import { CalcPage } from "./components/CalcPage/CalcPage.jsx";
 import { VehicleVideos } from "./components/VehicleVideos/VehicleVideos.jsx";
 import { About } from "./components/About/About.jsx";
 import { LoanRates } from "./components/LoanRates/LoanRates.jsx";
+import { NotFoundPage } from "./components/Page404/Page404.jsx";
+import { Blog } from "./components/Blog/Blog.jsx";
+import { FirstArticle } from "./components/Blog/Articles/FirstArticle.jsx";
 
 export function App({ store }) {
 
@@ -33,7 +36,15 @@ export function App({ store }) {
 				<Route path="rates" element={<LoanRates
 					state={state.loanRates}
 				/>} />
-				<Route path="*" element={<p>this page is not</p>} />
+				<Route path="blog" element={<Blog
+					state={state.blogPage}
+				/>} />
+				<Route path="article/1" element={<FirstArticle
+					state={state.articlesPage}
+				/>} />
+				<Route path="*" element={
+					<NotFoundPage state={state.notFoundPage} />
+				} />
 			</Routes>
 			<Footer images={
 				{
