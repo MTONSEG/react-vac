@@ -16,6 +16,7 @@ import { Terms } from "./components/TermsPrivacy/Terms.jsx";
 import { Privacy } from "./components/TermsPrivacy/Privacy.jsx";
 import { MenuModal } from "./components/UI/Modals/MenuModal.jsx";
 import { ContactModal } from "./components/UI/Modals/ContactModal.jsx";
+import { Catalog } from "./components/Catalog/Catalog.jsx";
 
 export function App({ store }) {
 
@@ -62,6 +63,9 @@ export function App({ store }) {
 				/>} />
 				<Route path="privacy" element={<Privacy
 					state={state.termsPolicy.privacy}
+				/>} />
+				<Route path="catalog" element={<Catalog
+					state={state.catalogPage}
 				/>} />
 				<Route path="*" element={
 					<NotFoundPage state={state.notFoundPage} />

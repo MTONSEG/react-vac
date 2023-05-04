@@ -1,17 +1,14 @@
 import React, { useRef, useState } from "react";
 import './InputForm.scss';
 
-export const InputForm = props => {
+export const InputSearch = props => {
 	let [newTextInput, setNewTextInput] = useState('');
 	let current = useRef(null);
 
 	const handleOnChangeInput = e => { setNewTextInput(e.currentTarget.value) }
 
-	let type = 'text';
-	if (props.type) type = props.type;
-
 	return (
-		<div className="input-wrapper">
+		<div className="input-wrapper input-wrapper_search">
 			{
 				props.icon
 					? <img src={props.icon} alt='icon' />
@@ -19,11 +16,6 @@ export const InputForm = props => {
 			}
 			<input
 				ref={current}
-				style={
-					props.icon
-						? {}
-						: { paddingLeft: "20px" }
-				}
 				type={
 					props.type ? `${props.type}` : 'text'
 				}
@@ -37,14 +29,6 @@ export const InputForm = props => {
 				placeholder={props.placeholder}
 				value={newTextInput}
 				onChange={handleOnChangeInput}
-				onBlur={
-					(e) => {
-						if (newTextInput == '') {
-							e.currentTarget.style.borderColor = '#F54E4E';
-						} else {
-							e.currentTarget.style.borderColor = ''
-						}
-					}}
 			/>
 		</div>
 	)

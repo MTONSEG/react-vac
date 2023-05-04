@@ -2,6 +2,7 @@ import { v1 as uuidv1, v1 } from 'uuid';
 import logo from './assets/icons/logo.svg';
 import logoFooter from './assets/icons/logo_footer.svg';
 import logoCompany from './assets/icons/creator-logo.svg';
+import iconSearch from './assets/icons/search_icon.svg';
 //Social icons
 import iconInstagram from './assets/icons/instagram.svg';
 import iconFacebook from './assets/icons/facebook.svg';
@@ -142,6 +143,27 @@ import iconClose from './assets/icons/close.svg';
 import iconUser from './assets/icons/user.svg';
 import iconPhone from './assets/icons/phone.svg';
 import iconMail from './assets/icons/mail.svg';
+//Catalog pictures
+import picCatalogPanamera from './assets/images/catalog_panamera.jpg';
+import picCatalogPanameraWebp from './assets/images/catalog_panamera.jpg?as=webp';
+import picCatalogOutlander from './assets/images/catalog_outlander.jpg';
+import picCatalogOutlanderWebp from './assets/images/catalog_outlander.jpg?as=webp';
+import picCatalogGti from './assets/images/catalog_mers-gti.jpg';
+import picCatalogGtiWebp from './assets/images/catalog_mers-gti.jpg?as=webp';
+import picCatalogW124 from './assets/images/catalog_w124.jpg';
+import picCatalogW124Webp from './assets/images/catalog_w124.jpg?as=webp';
+import picCatalogEClass from './assets/images/catalog_mers-c.jpg';
+import picCatalogEClassWebp from './assets/images/catalog_mers-c.jpg?as=webp';
+import picCatalogA7 from './assets/images/catalog_a7.jpg';
+import picCatalogA7Webp from './assets/images/catalog_a7.jpg?as=webp';
+//Filter icons
+import iconTruck from './assets/icons/trucks.svg';
+import iconSuv from './assets/icons/suv.svg';
+import iconSedan from './assets/icons/sedan.svg';
+import iconHatchback from './assets/icons/hatchback.svg';
+import iconCoupe from './assets/icons/coupe.svg';
+import iconConvertiable from './assets/icons/convertiable.svg';
+import iconVan from './assets/icons/van.svg';
 
 const images = {
 	logo: logo,
@@ -156,6 +178,7 @@ const images = {
 	iconYoutubeColor: iconYoutubeColor,
 	accordionArrow: accordionArrow,
 	iconClose: iconClose,
+	iconSearch:iconSearch,
 	homePage: {
 		carSuv: carSuv,
 		carSuvWebp: carSuvWebp,
@@ -285,6 +308,29 @@ const images = {
 		iconUser: iconUser,
 		iconPhone: iconPhone,
 		iconMail: iconMail
+	},
+	catalogPage: {
+		picCatalogPanamera: picCatalogPanamera,
+		picCatalogPanameraWebp: picCatalogPanameraWebp,
+		picCatalogOutlander: picCatalogOutlander,
+		picCatalogOutlanderWebp: picCatalogOutlanderWebp,
+		picCatalogGti: picCatalogGti,
+		picCatalogGtiWebp: picCatalogGtiWebp,
+		picCatalogW124: picCatalogW124,
+		picCatalogW124Webp: picCatalogW124Webp,
+		picCatalogEClass: picCatalogEClass,
+		picCatalogEClassWebp: picCatalogEClassWebp,
+		picCatalogA7: picCatalogA7,
+		picCatalogA7Webp: picCatalogA7Webp,
+	},
+	filter: {
+		iconTruck: iconTruck,
+		iconSuv: iconSuv,
+		iconSedan: iconSedan,
+		iconHatchback: iconHatchback,
+		iconCoupe: iconCoupe,
+		iconConvertiable: iconConvertiable,
+		iconVan: iconVan
 	}
 }
 
@@ -1105,6 +1151,170 @@ let modals = {
 	}
 
 }
+let catalogPage = {
+	filter: {
+		iconArr: images.accordionArrow,
+		iconSearch: images.iconSearch,
+		title: 'Detailed search',
+		makeModel: {
+			title: 'Make, Model',
+			list: [
+				{
+					id: v1(),
+					title: 'Make',
+					ph: 'Search Make...'
+				},
+				{
+					id: v1(),
+					title: 'Model',
+					ph: 'Search Model...'
+				},
+			]
+		},
+		bodyType: {
+			title: 'Body type',
+			list: [
+				{
+					title: 'Trucks',
+					icon: images.filter.iconTruck
+				},
+				{
+					title: 'SUV',
+					icon: images.filter.iconSuv
+				},
+				{
+					title: 'Sedan',
+					icon: images.filter.iconSedan
+				},
+				{
+					title: 'Hatchback',
+					icon: images.filter.iconHatchback
+				},
+				{
+					title: 'Coupe',
+					icon: images.filter.iconCoupe
+				},
+				{
+					title: 'Convertiable',
+					icon: images.filter.iconConvertiable
+				},
+				{
+					title: 'VAN',
+					icon: images.filter.iconVan
+				},
+			]
+		},
+		transmission: {
+			title: 'Transmission',
+			list: [
+				{
+					title: 'Automatic',
+				},
+				{
+					title: 'Manual'
+				}
+			],
+		},
+		price: {
+			title: 'Price',
+			start: 0,
+			end: 1000000,
+		},
+		year: {
+			title: 'Year',
+			start: 1970,
+			end: 2023,
+		},
+		mileage: {
+			title: 'Kilometres',
+			default: 100000
+		}
+	},
+	body: {
+		list: [
+			{
+				id: v1(),
+				title: 'Porsche Panamera II Turbo S E-Hybrid',
+				price: 150000,
+				year: 2012,
+				bodyType: 'Sedan',
+				transmission: 'Transmission',
+				mileage: 'Kilometres',
+				image: {
+					img: images.catalogPage.picCatalogPanamera,
+					webp: images.catalogPage.picCatalogPanameraWebp
+				}
+			},
+			{
+				id: v1(),
+				title: `Mitsubishi Outlander III Restyling 3
+				More datail information`,
+				price: 23500,
+				year: 2012,
+				bodyType: 'Sedan',
+				transmission: 'Transmission',
+				mileage: 'Kilometres',
+				image: {
+					img: images.catalogPage.picCatalogOutlander,
+					webp: images.catalogPage.picCatalogOutlanderWebp
+				}
+			},
+			{
+				id: v1(),
+				title: `Mercedes-Benz CLA I (C117, X117) 200
+				More information`,
+				price: 150000,
+				year: 2012,
+				bodyType: 'Sedan',
+				transmission: 'Transmission',
+				mileage: 'Kilometres',
+				image: {
+					img: images.catalogPage.picCatalogGti,
+					webp: images.catalogPage.picCatalogGtiWebp
+				}
+			},
+			{
+				id: v1(),
+				title: 'Mercedes-Benz W124 420',
+				price: 23500,
+				year: 2012,
+				bodyType: 'Sedan',
+				transmission: 'Transmission',
+				mileage: 'Kilometres',
+				image: {
+					img: images.catalogPage.picCatalogW124,
+					webp: images.catalogPage.picCatalogW124Webp
+				}
+			},
+			{
+				id: v1(),
+				title: 'Mercedes-Benz E-Class III (W211, S211) Restyling 230',
+				price: 150000,
+				year: 2012,
+				bodyType: 'Sedan',
+				transmission: 'Transmission',
+				mileage: 'Kilometres',
+				image: {
+					img: images.catalogPage.picCatalogEClass,
+					webp: images.catalogPage.picCatalogEClassWebp
+				}
+			},
+			{
+				id: v1(),
+				title: 'Audi A7 I (4G) S-tronic',
+				price: 23500,
+				year: 2012,
+				bodyType: 'Sedan',
+				transmission: 'Transmission',
+				mileage: 'Kilometres',
+				image: {
+					img: images.catalogPage.picCatalogA7,
+					webp: images.catalogPage.picCatalogA7Webp
+				}
+			},
+		]
+	}
+}
 
 export const state = {
 	images: images,
@@ -1118,4 +1328,5 @@ export const state = {
 	articlesPage: articlesPage,
 	termsPolicy: termsPolicy,
 	modals: modals,
+	catalogPage: catalogPage,
 }
