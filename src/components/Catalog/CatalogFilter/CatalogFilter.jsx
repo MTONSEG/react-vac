@@ -9,11 +9,24 @@ import { TransmissionFilter } from "./FilterAccordions/TransmissionFilter.jsx";
 export const CatalogFilter = ({ state, ...props }) => {
 
 	return (
-		<div className={`${props.className} filter-catalog`}>
-			<h1 className="filter-catalog__title">
-				{state.title}
-			</h1>
+		<div className={props.activeFilter
+			? `${props.className} filter-catalog active`
+			: `${props.className} filter-catalog`
+		}
+		>
 			<div className="filter-catalog__accordion">
+
+				<img
+					src={state.iconClose}
+					alt="close"
+					className="filter-catalog__close"
+					onClick={props.onClickHandler}
+				/>
+
+				<h1 className="filter-catalog__title">
+					{state.title}
+				</h1>
+
 				<MakeModelFilter
 					icon={state.iconArr}
 					search={state.iconSearch}
@@ -41,18 +54,6 @@ export const CatalogFilter = ({ state, ...props }) => {
 					icon={state.iconArr}
 					state={state.mileage}
 				/>
-				{/* <MakeModelFilter
-					icon={state.iconArr}
-					state={state.makeModel}
-				/>
-				<MakeModelFilter
-					icon={state.iconArr}
-					state={state.makeModel}
-				/>
-				<MakeModelFilter
-					icon={state.iconArr}
-					state={state.makeModel}
-				/> */}
 			</div>
 		</div>
 	);

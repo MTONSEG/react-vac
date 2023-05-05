@@ -7,10 +7,7 @@ export const RangeDoubleSliderFilter = ({ state, ...props }) => {
 
 	let [selected, isSelected] = useState(false);
 	let [mileageValue, setMileageValue] = useState([state.start, state.end])
-
-	console.log('start', mileageValue[0]);
-	console.log('end', mileageValue[1])
-
+	
 	const onClickHandler = () => { isSelected(!selected) };
 	const onChangeValueHandler = (value, index) => { setMileageValue(value) }
 

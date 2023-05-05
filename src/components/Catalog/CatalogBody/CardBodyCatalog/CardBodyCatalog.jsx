@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Picture } from "../../../UI/Picture/Picture.jsx";
 import './CardBodyCatalog.scss';
 
@@ -8,7 +9,7 @@ export const CardBodyCatalog = props => {
 	price = price.join('');
 
 	return (
-		<div className="item-catalog">
+		<Link to='/item' className="item-catalog">
 			<div className="item-catalog__image-wrap">
 				<Picture
 					className="item-catalog__image"
@@ -26,7 +27,7 @@ export const CardBodyCatalog = props => {
 				</p>
 				<ul className="item-catalog__list-info">
 					<li className="item-catalog__item-info text">
-						{props.year}
+						{props.year} <span>year</span>
 					</li>
 
 					<li className="item-catalog__item-info text">
@@ -41,6 +42,6 @@ export const CardBodyCatalog = props => {
 					{props.mileage}
 				</p>
 			</div>
-		</div>
+		</Link>
 	);
 }

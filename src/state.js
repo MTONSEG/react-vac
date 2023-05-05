@@ -164,8 +164,11 @@ import iconHatchback from './assets/icons/hatchback.svg';
 import iconCoupe from './assets/icons/coupe.svg';
 import iconConvertiable from './assets/icons/convertiable.svg';
 import iconVan from './assets/icons/van.svg';
+//inventory Body Head icons 
+import iconShare from './assets/icons/share.svg';
+import iconFilter from './assets/icons/filter-icon.svg';
 
-const images = {
+export const images = {
 	logo: logo,
 	logoFooter: logoFooter,
 	logoCompany: logoCompany,
@@ -178,7 +181,9 @@ const images = {
 	iconYoutubeColor: iconYoutubeColor,
 	accordionArrow: accordionArrow,
 	iconClose: iconClose,
-	iconSearch:iconSearch,
+	iconSearch: iconSearch,
+	iconShare: iconShare,
+	iconFilter:iconFilter,
 	homePage: {
 		carSuv: carSuv,
 		carSuvWebp: carSuvWebp,
@@ -331,7 +336,7 @@ const images = {
 		iconCoupe: iconCoupe,
 		iconConvertiable: iconConvertiable,
 		iconVan: iconVan
-	}
+	},
 }
 
 let homePage = {
@@ -1155,6 +1160,7 @@ let catalogPage = {
 	filter: {
 		iconArr: images.accordionArrow,
 		iconSearch: images.iconSearch,
+		iconClose: images.iconClose,
 		title: 'Detailed search',
 		makeModel: {
 			title: 'Make, Model',
@@ -1236,6 +1242,36 @@ let catalogPage = {
 		}
 	},
 	body: {
+		iconShare: images.iconShare,
+		accordionArrow: images.accordionArrow,
+		iconFilter: images.iconFilter,
+		sorting: {
+			title: 'Sorted by',
+			def: 'Recommendations',
+			list: [
+				{
+					name: 'new',
+					title: 'Newest inventory',
+				},
+				{
+					name: 'low',
+					title: 'Lowest price',
+				},
+				{
+					name: 'high',
+					title: 'Highest prices',
+				},
+				{
+					name: 'recommendation',
+					title: 'Recommendations',
+				},
+			]
+		},
+		search: {
+			title: 'Find car',
+			icon: images.iconSearch,
+			ph: 'Find a dream car...',
+		},
 		list: [
 			{
 				id: v1(),

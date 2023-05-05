@@ -1,11 +1,16 @@
 .filter-accordion {
-	padding: 10px 20px 10px;
+	padding: 11px 19px 7px;
 	& .item-accordion {
+		margin: 0 0 10px;
 		&__title {
 			font-weight: 500;
 			font-size: 16px;
 			line-height: 159%;
 			padding: 0 0 0 0;
+			img {
+				right: -4px;
+				top: 40%;		  
+			}
 		}
 		&__text {
 			padding: 0;

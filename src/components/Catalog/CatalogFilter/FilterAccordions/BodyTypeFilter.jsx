@@ -8,9 +8,7 @@ export const BodyTypeFilter = ({ state, ...props }) => {
 	let [selected, isSelected] = useState(false);
 
 	const onClickHandler = () => { isSelected(!selected) };
-
-	console.log(state.list)
-
+	
 	return (
 		<div className="item-accordion filter-accordion">
 			<h1 className={
