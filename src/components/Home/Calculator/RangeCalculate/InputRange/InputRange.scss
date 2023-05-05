@@ -46,6 +46,18 @@
 			background: #D7D7D7;
 			border-radius: 2px;
 		}
+		&_double {
+			&-0 {
+				background: #D7D7D7;
+			}
+			&-1 {
+				background: #7481FF;
+				border-radius: 2px;
+			}
+			&-2 {
+				background: #D7D7D7;
+			}
+		}
 	}
 	&__btn {
 		width: 18px;

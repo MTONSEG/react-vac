@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import './CatalogFilter.scss';
 import { BodyTypeFilter } from "./FilterAccordions/BodyTypeFilter.jsx";
 import { MakeModelFilter } from "./FilterAccordions/MakeModelFilter.jsx";
+import { MileageFilter } from "./FilterAccordions/MileageFilter.jsx";
+import { RangeDoubleSliderFilter } from "./FilterAccordions/RangeDoubleSliderFilter.jsx";
 import { TransmissionFilter } from "./FilterAccordions/TransmissionFilter.jsx";
 
 export const CatalogFilter = ({ state, ...props }) => {
@@ -23,7 +25,21 @@ export const CatalogFilter = ({ state, ...props }) => {
 				/>
 				<TransmissionFilter
 					icon={state.iconArr}
-					title={state.transmission.title}
+					state={state.transmission}
+				/>
+
+				<RangeDoubleSliderFilter
+					icon={state.iconArr}
+					state={state.price}
+				/>
+				<RangeDoubleSliderFilter
+					icon={state.iconArr}
+					type='year'
+					state={state.year}
+				/>
+				<MileageFilter
+					icon={state.iconArr}
+					state={state.mileage}
 				/>
 				{/* <MakeModelFilter
 					icon={state.iconArr}

@@ -1217,17 +1217,22 @@ let catalogPage = {
 		},
 		price: {
 			title: 'Price',
-			start: 0,
-			end: 1000000,
+			start: 10000,
+			end: 90000,
+			min: 0,
+			max: 100000
 		},
 		year: {
 			title: 'Year',
-			start: 1970,
-			end: 2023,
+			start: 1980,
+			end: 2013,
+			min: 1970,
+			max: 2023,
 		},
 		mileage: {
 			title: 'Kilometres',
-			default: 100000
+			start: 100000,
+			end: 200000
 		}
 	},
 	body: {

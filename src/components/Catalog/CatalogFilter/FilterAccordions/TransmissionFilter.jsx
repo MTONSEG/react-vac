@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import './FilterAccordions.scss';
+import { Checkbox } from "../../../UI/Forms/Checkbox/Checkbox.jsx";
 
 export const TransmissionFilter = ({ state, ...props }) => {
 	let contentEl = useRef(null);
@@ -17,7 +18,7 @@ export const TransmissionFilter = ({ state, ...props }) => {
 			}
 				onClick={onClickHandler}
 			>
-				{props.title}
+				{state.title}
 				<img src={props.icon} alt="arrow" />
 			</h1>
 			<div ref={contentEl}
@@ -32,7 +33,13 @@ export const TransmissionFilter = ({ state, ...props }) => {
 						: { height: "0px" }
 				}
 			>
-
+				<div className="filter-accordion__checkbox _bold">
+					{state.list.map((el, i) => (
+						<Checkbox key={i}
+							text={el.title}
+						/>
+					))}
+				</div>
 			</div>
 		</div>
 	);
