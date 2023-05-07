@@ -45,8 +45,15 @@ export const CatalogBody = ({ state, ...props }) => {
 
 	let widthScreen = window.innerWidth;
 
+	const handleScroll = e => {
+		if (props.activeFilter) {
+			e.preventDefault();
+			console.log(props.activeFilter)
+		}
+
+	}
 	return (
-		<div className={`${props.className} body-catalog`}>
+		<div className={`${props.className} body-catalog`} onScroll={handleScroll}>
 			<div className="body-catalog__head">
 				<div className="body-catalog__filter-wrap">
 					<button

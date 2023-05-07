@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import './Modals.scss';
 
@@ -6,6 +6,10 @@ export const MenuModal = ({ state, ...props }) => {
 	let icons = state.icons;
 
 	const handleOnCloseClick = () => { props.setShowMenu(!props.showMenu) }
+
+	useEffect(() => {
+		document.body.style.overflow = props.showMenu ? 'hidden' : 'auto';
+	}, [props.showMenu])
 
 	return (
 		<div className={

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { LinerBtn } from "../Buttons/LinerBtn.jsx";
 import { MenuBtn } from "../Buttons/MenuBtn.jsx";
 import { SolidBtn } from "../Buttons/SolidBtn.jsx";
@@ -16,7 +17,9 @@ export const Header = props => {
 
 					<div className="header__right">
 						<div className="header__buttons">
-							<LinerBtn title="Inventory" className="header__inventory-btn" />
+							<Link to='catalog' className="header__inventory-btn btn btn_liner">
+								Inventory
+							</Link>
 							<SolidBtn
 								title="Request a car"
 								className=" btn_solid header__request-btn"

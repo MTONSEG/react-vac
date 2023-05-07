@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useEffect } from "react";
 import './CatalogFilter.scss';
 import { BodyTypeFilter } from "./FilterAccordions/BodyTypeFilter.jsx";
 import { MakeModelFilter } from "./FilterAccordions/MakeModelFilter.jsx";
@@ -7,6 +8,10 @@ import { RangeDoubleSliderFilter } from "./FilterAccordions/RangeDoubleSliderFil
 import { TransmissionFilter } from "./FilterAccordions/TransmissionFilter.jsx";
 
 export const CatalogFilter = ({ state, ...props }) => {
+
+	useEffect(() => {
+		document.body.style.overflow = props.activeFilter ? 'hidden' : 'auto';
+	}, [props.activeFilter])
 
 	return (
 		<div className={props.activeFilter

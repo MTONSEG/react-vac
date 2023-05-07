@@ -9,8 +9,11 @@ export const Catalog = ({ state }) => {
 
 	const handleActiveFilterClick = () => { setActiveFilter(!activeFilter) }
 
+
 	return (
-		<div className="catalog">
+		<div
+			className="catalog"
+		>
 			<div className="container">
 				<div className="catalog__row">
 					<CatalogFilter
@@ -22,6 +25,7 @@ export const Catalog = ({ state }) => {
 					<CatalogBody
 						state={state.body}
 						className="catalog__body"
+						activeFilter={activeFilter}
 						onClickHandler={handleActiveFilterClick}
 					/>
 				</div>

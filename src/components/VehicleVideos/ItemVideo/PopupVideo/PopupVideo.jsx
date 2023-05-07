@@ -1,7 +1,11 @@
-import React from "react";
+import React, {useEffect} from "react";
 import './PopupVideo.scss';
 
 export const PopupVideo = props => {
+
+	useEffect(() => {
+		document.body.style.overflow = props.activeVideo ? 'hidden' : 'auto';
+	}, [props.activeVideo])
 
 	return (
 		<div className={

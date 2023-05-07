@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { SolidBtn } from "../Buttons/SolidBtn.jsx";
 import { InputForm } from "../Forms/InputForm/InputForm.jsx";
@@ -8,6 +8,10 @@ export const ContactModal = ({ state, ...props }) => {
 	let icons = state.icons;
 
 	const handleOnCloseClick = () => { props.setShowMenu(!props.showMenu) }
+
+	useEffect(() => {
+		document.body.style.overflow = props.showMenu ? 'hidden' : 'auto';
+	}, [props.showMenu])
 
 	return (
 		<div className={
