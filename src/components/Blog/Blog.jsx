@@ -2,8 +2,11 @@ import React from "react";
 import './Blog.scss';
 import { TitlePages } from "../UI/TitlePages/TitlePages.jsx";
 import { ItemSliderInteresting } from "../Home/InterestingRead/SliderInteresting/ItemSliderInteresting/ItemSliderInteresting.jsx";
+import { Header } from "../UI/Header/Header.jsx";
 
-export const Blog = ({ state }) => {
+export const Blog = ({ state, ...props }) => {
+	let modalState = props.stateModals;
+
 	let itemsList = state.list.map(el => (
 		<ItemSliderInteresting
 			key={el.id}
@@ -17,6 +20,13 @@ export const Blog = ({ state }) => {
 
 	return (
 		<>
+			<Header
+				logo={modalState.logo}
+				showMenu={modalState.showMenu}
+				setShowMenu={modalState.setShowMenu}
+				showRequest={modalState.showRequest}
+				setShowRequest={modalState.setShowRequest}
+			/>
 			<TitlePages
 				title={state.bigTitle}
 				className='blog__big-title'

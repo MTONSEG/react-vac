@@ -10,10 +10,21 @@ import { CommentsSlider } from "../Home/CommentsSlider/CommentsSlider.jsx";
 import { DynamicTeamAbout } from "./DynamicTeamAbout/DynamicTeamAbout.jsx";
 import { FeaturesAbout } from "./FeaturesAbout/FeaturesAbout.jsx";
 import { Calculator } from "../Home/Calculator/Calculator.jsx";
+import { Header } from "../UI/Header/Header.jsx";
 
-export const About = ({ state }) => {
+export const About = ({ state, ...props }) => {
+
+	let modalState = props.stateModals;
+
 	return (
 		<>
+			<Header
+				logo={modalState.logo}
+				showMenu={modalState.showMenu}
+				setShowMenu={modalState.setShowMenu}
+				showRequest={modalState.showRequest}
+				setShowRequest={modalState.setShowRequest}
+			/>
 			<TitlePages title={state.bigTitle} />
 			<div className="about">
 				<div className="container">
@@ -32,19 +43,19 @@ export const About = ({ state }) => {
 						<BestPricesAbout state={state.bestPrices} />
 					</div>
 					<div className="about__qualified-agents">
-						<QualifiedAgentsAbout state={state.qualifiedAgents}/>
+						<QualifiedAgentsAbout state={state.qualifiedAgents} />
 					</div>
 					<div className="about__comments">
-						<CommentsSlider state={state.commentsSlider}/>
+						<CommentsSlider state={state.commentsSlider} />
 					</div>
 					<div className="about__dynamic-team">
 						<DynamicTeamAbout state={state.dynamicTeam} />
 					</div>
 					<div className="about__features">
-						<FeaturesAbout state={state.features}/>
+						<FeaturesAbout state={state.features} />
 					</div>
 					<div className="about__calculator">
-						<Calculator state={state.calculator}/>
+						<Calculator state={state.calculator} />
 					</div>
 				</div>
 			</div>

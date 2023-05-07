@@ -2,7 +2,6 @@ import React, { useState } from "react"
 import { Route, Routes, } from "react-router-dom";
 import './App.scss';
 import { Footer } from "./components/UI/Footer/Footer.jsx";
-import { Header } from "./components/UI/Header/Header.jsx";
 import { Home } from "./components/Home/Home.jsx";
 import { CalcPage } from "./components/CalcPage/CalcPage.jsx";
 import { VehicleVideos } from "./components/VehicleVideos/VehicleVideos.jsx";
@@ -24,48 +23,60 @@ export function App({ store }) {
 	let [showMenu, setShowMenu] = useState(false);
 	let [showRequest, setShowRequest] = useState(false);
 
+	let showModals = {
+		showMenu: showMenu,
+		setShowMenu: setShowMenu,
+		showRequest: showRequest,
+		setShowRequest: setShowRequest,
+		logo: state.images.logo
+	}
+
 	return (
 		<div className="wrapper">
-			<Header
-				logo={state.images.logo}
-				showMenu={showMenu}
-				setShowMenu={setShowMenu}
-				showRequest={showRequest}
-				setShowRequest={setShowRequest}
-			/>
 			<Routes>
 				<Route path="/" element={<Home
 					state={state.homePage}
+					stateModals={showModals}
 				/>} />
 				<Route path="calc" element={<CalcPage
 					state={state.calcPage}
+					stateModals={showModals}
 				/>} />
 				<Route path="videos" element={<VehicleVideos
 					state={state.videosPage}
+					stateModals={showModals}
 				/>} />
 				<Route path="about" element={<About
 					state={state.aboutPage}
+					stateModals={showModals}
 				/>} />
 				<Route path="rates" element={<LoanRates
 					state={state.loanRates}
+					stateModals={showModals}
 				/>} />
 				<Route path="blog" element={<Blog
 					state={state.blogPage}
+					stateModals={showModals}
 				/>} />
 				<Route path="article/1" element={<FirstArticle
 					state={state.articlesPage}
+					stateModals={showModals}
 				/>} />
 				<Route path="article/2" element={<SecondArticle
 					state={state.articlesPage}
+					stateModals={showModals}
 				/>} />
 				<Route path="terms" element={<Terms
 					state={state.termsPolicy.terms}
+					stateModals={showModals}
 				/>} />
 				<Route path="privacy" element={<Privacy
 					state={state.termsPolicy.privacy}
+					stateModals={showModals}
 				/>} />
 				<Route path="catalog" element={<Catalog
 					state={state.catalogPage}
+					stateModals={showModals}
 				/>} />
 				<Route path="*" element={
 					<NotFoundPage state={state.notFoundPage} />
