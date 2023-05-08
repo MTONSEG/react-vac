@@ -46,6 +46,9 @@
 	}
 	&__request-btn {
 		min-width: 200px;
+		&.apply {
+			min-width: 243px;
+		}
 	}
 }
 
@@ -53,12 +56,16 @@
 	.header {
 		&__request-btn {
 			min-width: 178px;
+			&.apply {
+				min-width: 236px;
+			}
 		}
 	}
 }
 
 @media (max-width: 767px) {
 	.header {
+		min-height: 55px;
 		&__row {
 			padding: 10px 0;
 		}
@@ -72,6 +79,9 @@
 		&__request-btn {
 			min-width: 130px;
 			max-height: 35px;
+			&.apply {
+				display: none;
+			}
 		}
 		&__inventory-btn {
 			display: none;

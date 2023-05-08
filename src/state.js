@@ -167,6 +167,23 @@ import iconVan from './assets/icons/van.svg';
 //inventory Body Head icons 
 import iconShare from './assets/icons/share.svg';
 import iconFilter from './assets/icons/filter-icon.svg';
+//Inventory Car Page images
+import picPanamera1 from './assets/images/inventary_panamera-1.jpg';
+import picPanamera1Webp from './assets/images/inventary_panamera-1.jpg?as=webp';
+import picPanamera2 from './assets/images/inventary_panamera-2.jpg';
+import picPanamera2Webp from './assets/images/inventary_panamera-2.jpg?as=webp';
+import picPanamera3 from './assets/images/inventary_panamera-3.jpg';
+import picPanamera3Webp from './assets/images/inventary_panamera-3.jpg?as=webp';
+import picPanamera4 from './assets/images/inventary_panamera-4.jpg';
+import picPanamera4Webp from './assets/images/inventary_panamera-4.jpg?as=webp';
+import picPanamera1M from './assets/images/inventory_panamera-1_m.jpg';
+import picPanamera1WebpM from './assets/images/inventory_panamera-1_m.jpg?as=webp';
+import picPanamera2M from './assets/images/inventory_panamera-2_m.jpg';
+import picPanamera2WebpM from './assets/images/inventory_panamera-2_m.jpg?as=webp';
+import picPanamera3M from './assets/images/inventory_panamera-3_m.jpg';
+import picPanamera3WebpM from './assets/images/inventory_panamera-3_m.jpg?as=webp';
+import picPanamera4M from './assets/images/inventory_panamera-4_m.jpg';
+import picPanamera4WebpM from './assets/images/inventory_panamera-4_m.jpg?as=webp';
 
 export const images = {
 	logo: logo,
@@ -183,7 +200,7 @@ export const images = {
 	iconClose: iconClose,
 	iconSearch: iconSearch,
 	iconShare: iconShare,
-	iconFilter:iconFilter,
+	iconFilter: iconFilter,
 	homePage: {
 		carSuv: carSuv,
 		carSuvWebp: carSuvWebp,
@@ -337,6 +354,24 @@ export const images = {
 		iconConvertiable: iconConvertiable,
 		iconVan: iconVan
 	},
+	carPage: {
+		picPanamera1M: picPanamera1M,
+		picPanamera2M: picPanamera2M,
+		picPanamera3M: picPanamera3M,
+		picPanamera4M: picPanamera4M,
+		picPanamera1WebpM: picPanamera1WebpM,
+		picPanamera2WebpM: picPanamera2WebpM,
+		picPanamera3WebpM: picPanamera3WebpM,
+		picPanamera4WebpM: picPanamera4WebpM,
+		picPanamera1: picPanamera1,
+		picPanamera2: picPanamera2,
+		picPanamera3: picPanamera3,
+		picPanamera4: picPanamera4,
+		picPanamera1Webp: picPanamera1Webp,
+		picPanamera2Webp: picPanamera2Webp,
+		picPanamera3Webp: picPanamera3Webp,
+		picPanamera4Webp: picPanamera4Webp,
+	}
 }
 
 let homePage = {
@@ -1356,6 +1391,116 @@ let catalogPage = {
 		]
 	}
 }
+let carPage = {
+	price: 34000,
+	title: 'Porsche Panamera 4S',
+	subtitle: 'Watching now 8 people',
+	detail: ['Rear wheel drive', '2500-4000 rpm', '6 cylinders', '0-100 in 2.7 s.', '11 l. per 100 km.', 'Power steering', 'Rear wheel drive', '2500-4000 rpm'],
+	description: `Porsche 911 - a sports car manufactured by the German company Porsche AG in the back of a two-door coupe or a convertible based on it, produced in different generations from 1964 to the present day.
+	The 911 index was not originally planned for the timeless designation of different generations of the same car, and was no more than one of many similar in the through three-digit internal factory numbering of all Porsche models assigned to a very specific 1964 model.`,
+	titleBtn: 'Request more information',
+	slides: [
+		{
+			img: images.carPage.picPanamera1,
+			webp: images.carPage.picPanamera1Webp,
+			imgMob: images.carPage.picPanamera1M,
+			webpMob: images.carPage.picPanamera1WebpM,
+		},
+		{
+			img: images.carPage.picPanamera2,
+			webp: images.carPage.picPanamera2Webp,
+			imgMob: images.carPage.picPanamera2M,
+			webpMob: images.carPage.picPanamera2WebpM,
+		},
+		{
+			img: images.carPage.picPanamera3,
+			webp: images.carPage.picPanamera3Webp,
+			imgMob: images.carPage.picPanamera3M,
+			webpMob: images.carPage.picPanamera3WebpM,
+		},
+		{
+			img: images.carPage.picPanamera4,
+			webp: images.carPage.picPanamera4Webp,
+			imgMob: images.carPage.picPanamera4M,
+			webpMob: images.carPage.picPanamera4WebpM,
+		},
+		{
+			img: images.carPage.picPanamera1,
+			webp: images.carPage.picPanamera1Webp,
+			imgMob: images.carPage.picPanamera1M,
+			webpMob: images.carPage.picPanamera1WebpM,
+		},
+		{
+			img: images.carPage.picPanamera2,
+			webp: images.carPage.picPanamera2Webp,
+			imgMob: images.carPage.picPanamera2M,
+			webpMob: images.carPage.picPanamera2WebpM,
+		},
+		{
+			img: images.carPage.picPanamera3,
+			webp: images.carPage.picPanamera3Webp,
+			imgMob: images.carPage.picPanamera3M,
+			webpMob: images.carPage.picPanamera3WebpM,
+		},
+		{
+			img: images.carPage.picPanamera4,
+			webp: images.carPage.picPanamera4Webp,
+			imgMob: images.carPage.picPanamera4M,
+			webpMob: images.carPage.picPanamera4WebpM,
+		},
+	],
+	topList: [
+		{
+			title: 'Price',
+			value: '34 000 $'
+		},
+		{
+			title: 'Body',
+			value: 'Sedan'
+		},
+		{
+			title: 'Year',
+			value: '2018'
+		},
+		{
+			title: 'Transmission',
+			value: 'Automatic'
+		},
+		{
+			title: 'Kilometres ',
+			value: '20 000'
+		},
+	],
+	calc: {
+		title: 'Calculate the installment plan for this car.',
+		text: 'Before you start shopping, let’s figure out how much you can afford. Move the sliders to see how the loan duration and the total loan amount affect your monthly payments.',
+		titleBtn: 'apply for this vehicle',
+		loanAmount: {
+			title: 'Loan Amount',
+			max: 1000000,
+			default: 150000
+		},
+		loanDuration: {
+			title: 'Loan Duration',
+			max: 60,
+			default: 18
+		},
+		payments: [
+			{
+				title: 'Bi-Weekly Payment',
+				value: `$ 483`,
+			},
+			{
+				title: 'Monthly Payment',
+				value: `$ 966`,
+			},
+			{
+				title: 'Weekly Payment',
+				value: `$ 241`,
+			},
+		]
+	}
+}
 
 export const state = {
 	images: images,
@@ -1370,4 +1515,5 @@ export const state = {
 	termsPolicy: termsPolicy,
 	modals: modals,
 	catalogPage: catalogPage,
+	carPage: carPage,
 }

@@ -15,16 +15,34 @@ export const Calculator = ({ state, ...props }) => {
 		}>
 			<div className="container">
 				<div className="calculator__head">
-					<h1 className="calculator__title title">
+					<h1 className=
+						{
+							props.cardType
+								? "calculator__title calculator__title_card title"
+								: "calculator__title title"
+						}
+					>
 						{state.title}
 					</h1>
-					<p className="calculator__text text">
-						{state.text}
-					</p>
+					{
+						props.cardType
+							? ''
+							: <p className="calculator__text text">{state.text}</p>
+					}
 				</div>
-				<div className="calculator__body">
+				<div className={
+					props.cardType
+						? "calculator__body calculator__body_card"
+						: "calculator__body"
+				}
+				>
 					<RangeCalculate
-						className="calculator__range"
+						className={
+							props.cardType
+								? "calculator__range calculator__range_card"
+								: "calculator__range"
+						}
+						price={props.price}
 						state={state}
 						loanAmount={loanAmount}
 						setLoanAmount={setLoanAmount}
@@ -32,8 +50,13 @@ export const Calculator = ({ state, ...props }) => {
 						setLoanDuration={setLoanDuration}
 					/>
 					<PaymentRange
-						className="calculator__payment"
+						className={
+							props.cardType
+								? "calculator__payment calculator__payment_card"
+								: "calculator__payment"
+						}
 						state={state.payments}
+						titleBtn={state.titleBtn}
 					/>
 				</div>
 			</div>

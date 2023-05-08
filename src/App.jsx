@@ -16,6 +16,7 @@ import { Privacy } from "./components/TermsPrivacy/Privacy.jsx";
 import { MenuModal } from "./components/UI/Modals/MenuModal.jsx";
 import { ContactModal } from "./components/UI/Modals/ContactModal.jsx";
 import { Catalog } from "./components/Catalog/Catalog.jsx";
+import { CarPage } from "./components/Catalog/CarPage/CarPage.jsx";
 
 export function App({ store }) {
 
@@ -33,6 +34,7 @@ export function App({ store }) {
 
 	return (
 		<div className="wrapper">
+
 			<Routes>
 				<Route path="/" element={<Home
 					state={state.homePage}
@@ -78,10 +80,15 @@ export function App({ store }) {
 					state={state.catalogPage}
 					stateModals={showModals}
 				/>} />
+				<Route path="card" element={<CarPage
+					state={state.carPage}
+					stateModals={showModals}
+				/>} />
 				<Route path="*" element={
 					<NotFoundPage state={state.notFoundPage} />
 				} />
 			</Routes>
+
 			<Footer images={
 				{
 					logo: state.images.logoFooter,

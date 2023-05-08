@@ -23,10 +23,11 @@ export const InputRange = props => {
 		props.setLoan(value);
 	}
 
-	let type = (props.type === 'month') ?
-		`${props.loan}` :
-		`$ ${priceHandle(props.loan)}`;
+	let loan = props.price ? props.price : props.loan;
 
+	let type = (props.type === 'month') ?
+		`${loan}` :
+		`$ ${priceHandle(loan)}`;
 
 	return (
 		<div className="slider-range__wrap">
@@ -43,16 +44,20 @@ export const InputRange = props => {
 						{type}
 					</p>
 			}
+			{
+				props.price
+					? <div className="slider-range__line"></div>
+					: <ReactSlider
+						max={props.max}
+						defaultValue={props.loan}
+						className="slider-range__slider range-slider"
+						thumbClassName="range-slider__thumb"
+						trackClassName="range-slider__track"
+						onChange={onChangeValueHandler}
+						renderThumb={renderThumbHandler}
+					/>
+			}
 
-			<ReactSlider
-				max={props.max}
-				defaultValue={props.loan}
-				className="slider-range__slider range-slider"
-				thumbClassName="range-slider__thumb"
-				trackClassName="range-slider__track"
-				onChange={onChangeValueHandler}
-				renderThumb={renderThumbHandler}
-			/>
 		</div>
 	)
 }

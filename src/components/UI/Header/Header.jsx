@@ -14,6 +14,7 @@ export const Header = props => {
 				<div className="header__row">
 					<img className="header__logo" src={props.logo} alt="logo" />
 					{
+
 						props.mod === 'invent'
 							? <p className="header__invent">Inventory</p>
 							: ''
@@ -30,8 +31,15 @@ export const Header = props => {
 							}
 
 							<SolidBtn
-								title="Request a car"
-								className=" btn_solid header__request-btn"
+								title={
+									props.mod === 'apply'
+										? 'apply for this vehicle' : "Request a car"
+								}
+								className={
+									props.mod === 'apply'
+										? "btn_solid header__request-btn apply"
+										: "btn_solid header__request-btn"
+								}
 								onClickHandler={handleOnToggleCLock}
 							/>
 						</div>

@@ -24,7 +24,7 @@ export const PaymentRange = ({ state, ...props }) => {
 			</ul>
 
 			<SolidBtn
-				title="Request a car"
+				title={props.titleBtn ? props.titleBtn : "Request a car"}
 				className="payment-range__btn btn_solid"
 			/>
 		</div>

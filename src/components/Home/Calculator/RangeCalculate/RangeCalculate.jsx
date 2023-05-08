@@ -37,6 +37,7 @@ export const RangeCalculate = props => {
 			</div>
 			<div className="calc-range__inputs">
 				<InputRange
+					price={props.price}
 					max={props.state.loanAmount.max}
 					title={props.state.loanAmount.title}
 					loan={props.loanAmount}
