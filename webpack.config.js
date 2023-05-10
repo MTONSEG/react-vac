@@ -24,6 +24,9 @@ module.exports = {
 		port: 8080,
 		historyApiFallback: true
 	},
+	resolve: {
+		extensions: ['.js', '.jsx'],
+	},
 	plugins: [
 		new webpack.HotModuleReplacementPlugin(),
 		new HtmlWebpackPlugin({

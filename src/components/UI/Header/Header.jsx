@@ -23,25 +23,31 @@ export const Header = props => {
 					<div className="header__right">
 						<div className="header__buttons">
 							{
-								props.mod === 'invent'
+								(props.mod === 'invent')
 									? ''
 									: <Link to='/catalog' className="header__inventory-btn btn btn_liner">
 										Inventory
 									</Link>
 							}
+							{
+								(props.mod === 'request')
+									? ''
+									: <Link to='/quiz'>
+										<SolidBtn
+											title={
+												props.mod === 'apply'
+													? 'apply for this vehicle' : "Request a car"
+											}
+											className={
+												props.mod === 'apply'
+													? "btn_solid header__request-btn apply"
+													: "btn_solid header__request-btn"
+											}
+											// onClickHandler={handleOnToggleCLock}
+										/>
+									</Link>
+							}
 
-							<SolidBtn
-								title={
-									props.mod === 'apply'
-										? 'apply for this vehicle' : "Request a car"
-								}
-								className={
-									props.mod === 'apply'
-										? "btn_solid header__request-btn apply"
-										: "btn_solid header__request-btn"
-								}
-								onClickHandler={handleOnToggleCLock}
-							/>
 						</div>
 
 						<MenuBtn

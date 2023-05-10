@@ -1502,6 +1502,163 @@ let carPage = {
 	}
 }
 
+export const quizData = {
+	budget: {
+		name: 'budget',
+		question: 'What\'s your budget?',
+		text: 'Find vehicle options that fit your budget.',
+		answers: [
+			{
+				id: v1(),
+				value: 'Under $250/Month',
+			},
+			{
+				id: v1(),
+				value: '$250-374/Month',
+			},
+			{
+				id: v1(),
+				value: '$374-500/Month',
+			},
+			{
+				id: v1(),
+				value: 'Over $500/Month',
+			},
+		]
+	},
+	employment: {
+		name: 'employment',
+		question: 'What\'s your employment status?',
+		text: 'Your employment status will help determine the best vehicle and financing options for you.',
+		answers: [
+			{
+				id: v1(),
+				value: 'Employed',
+			},
+			{
+				id: v1(),
+				value: 'Self-Employed',
+			},
+			{
+				id: v1(),
+				value: 'Student',
+			},
+			{
+				id: v1(),
+				value: 'Retired / Pension',
+			},
+			{
+				id: v1(),
+				value: 'Other',
+			},
+		]
+	},
+	income: {
+		name: 'income',
+		question: 'Enter your monthly income',
+		text: 'Your income details help us make sure your vehicle payments are easy and affordable. Before taxes and deductions.',
+		ph: {
+			1: 'Monthly income'
+		}
+	},
+	selfIncome: {
+		name: 'selfIncome',
+		question: 'Tell us about your employment',
+		text: 'We won’t come visit but we need these details to confirm your employment status so you can get the best rates possible.',
+		ph: {
+			1: 'Employer',
+			2: 'Title'
+		}
+	},
+	currentlyWorking: {
+		name: 'currentlyWorking',
+		question: 'Are you currently working?',
+		text: 'Your employment status will help determing the best vehicle and financing options for you.',
+		answers: [
+			{
+				id: v1(),
+				value: 'Yes',
+			},
+			{
+				id: v1(),
+				value: 'No',
+			},
+		]
+	},
+	otherIncome: {
+		name: 'otherIncome',
+		question: 'How do you earn income?',
+		text: 'Your employment status will help determine the best vehicle and financing options for you.',
+		answers: [
+			{
+				id: v1(),
+				value: 'Long-term disability'
+			},
+			{
+				id: v1(),
+				value: 'Spousal support / Alimony'
+			},
+			{
+				id: v1(),
+				value: 'Child support'
+			},
+			{
+				id: v1(),
+				value: 'Social assistance / Welfare'
+			},
+			{
+				id: v1(),
+				value: 'Maternity leave'
+			},
+			{
+				id: v1(),
+				value: 'Baby bonus / Child tax'
+			},
+			{
+				id: v1(),
+				value: 'Unemployed / EI'
+			},
+			{
+				id: v1(),
+				value: 'Other / Not listed'
+			},
+		]
+	},
+	longBeen: {
+		name: 'longBeen',
+		question: 'How long have you been earning this income?',
+		text: 'Your income details help us make sure your vehicle payments are easy and affordable.',
+	},
+	longReceiving: {
+		name: 'longReceiving',
+		question: 'How long receiving?',
+		text: 'Your income details help us make sure your vehicle payments are easy and affordable.',ph: {
+			1: 'Time'
+		}
+	},
+	live: {
+		name: 'live',
+		question: 'Where do you live?',
+		text: 'Providing your location helps find the best deals near you.',
+	},
+	born: {
+		name: 'born',
+		question: 'When were you born?',
+		text: '',
+	},
+	last: {
+		name: 'last',
+		question: 'Congratulations! Last step.',
+		text: 'Get access to your vehicle and financing options by creating your account. There is no obligation to continue with financing if you change your mind. ',
+	},
+	finish: {
+		icon: '',
+		titleBtn: 'Go to main page',
+		title: 'Application successful!',
+		text: 'Your response was successfully submitted. Thank you! Our team will reach out to you shortly.',
+	}
+}
+
 export const state = {
 	images: images,
 	homePage: homePage,
@@ -1516,4 +1673,5 @@ export const state = {
 	modals: modals,
 	catalogPage: catalogPage,
 	carPage: carPage,
+	quiz: quizData
 }

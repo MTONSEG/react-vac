@@ -5,8 +5,10 @@ export const SolidBtn = props => {
 	let style = props.className ? (' ' + props.className) : '';
 
 	const onClickHandler = (e) => {
-		props.onClickHandler();
-		e.preventDefault()
+		if (props.onClickHandler) {
+			props.onClickHandler();
+			e.preventDefault()
+		}
 	}
 
 	return (
