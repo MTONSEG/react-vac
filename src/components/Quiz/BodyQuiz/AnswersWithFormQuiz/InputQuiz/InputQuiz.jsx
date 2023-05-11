@@ -11,7 +11,9 @@ export const InputQuiz = props => {
 		<>
 			<input
 				className={props.className ? `${props.className} form-quiz__input` : "form-quiz__input"}
-				type="text"
+				type={
+					props.type ? props.type : 'text'
+				}
 				value={props.value}
 				placeholder={props.placeholder}
 				onChange={onChangeHandler} 

@@ -11,6 +11,10 @@ export const AnswersQuiz = ({ state, result, setResult, ...props }) => {
 		setResult({ ...result, [current.name]: current.value });
 	}
 
+	const onContinueClickHandler = () => { props.onContinueClick(props.next) };
+	const onBackClickHandler = () => {
+		props.onBackClick(props.prev, state.name)
+	};
 	return (
 		<>
 			<div className="answers-quiz">
@@ -37,13 +41,14 @@ export const AnswersQuiz = ({ state, result, setResult, ...props }) => {
 				<ContinueQuizBtn
 					className="buttons-quiz__continue"
 					next={props.next}
-					onContinueClick={() => { }} />
+					onContinueClick={onContinueClickHandler}
+				/>
 				{
 					props.prev
 						? <BackQuizBtn
 							className="buttons-quiz__back"
 							prev={props.prev}
-							onBackClick={props.onBackClick} />
+							onBackClick={onBackClickHandler} />
 						: <></>
 				}
 			</div>

@@ -32,7 +32,7 @@ export const Header = props => {
 							{
 								(props.mod === 'request')
 									? ''
-									: <Link to='/quiz'>
+									: <Link to='/quiz/budget'>
 										<SolidBtn
 											title={
 												props.mod === 'apply'

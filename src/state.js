@@ -3,6 +3,7 @@ import logo from './assets/icons/logo.svg';
 import logoFooter from './assets/icons/logo_footer.svg';
 import logoCompany from './assets/icons/creator-logo.svg';
 import iconSearch from './assets/icons/search_icon.svg';
+import iconSuccess from './assets/icons/success.svg';
 //Social icons
 import iconInstagram from './assets/icons/instagram.svg';
 import iconFacebook from './assets/icons/facebook.svg';
@@ -201,6 +202,7 @@ export const images = {
 	iconSearch: iconSearch,
 	iconShare: iconShare,
 	iconFilter: iconFilter,
+	iconSuccess:iconSuccess,
 	homePage: {
 		carSuv: carSuv,
 		carSuvWebp: carSuvWebp,
@@ -1624,38 +1626,55 @@ export const quizData = {
 			},
 		]
 	},
-	longBeen: {
-		name: 'longBeen',
-		question: 'How long have you been earning this income?',
-		text: 'Your income details help us make sure your vehicle payments are easy and affordable.',
-	},
 	longReceiving: {
 		name: 'longReceiving',
 		question: 'How long receiving?',
-		text: 'Your income details help us make sure your vehicle payments are easy and affordable.',ph: {
+		text: 'Your income details help us make sure your vehicle payments are easy and affordable.',
+		ph: {
 			1: 'Time'
 		}
 	},
-	live: {
-		name: 'live',
+	address: {
+		name: 'address',
 		question: 'Where do you live?',
 		text: 'Providing your location helps find the best deals near you.',
+		ph: {
+			1: 'Street address',
+			2: 'City',
+			3: 'Province',
+			4: 'Postal code',
+		}
 	},
 	born: {
 		name: 'born',
 		question: 'When were you born?',
 		text: '',
+		ph: {
+			1: 'Year',
+			2: 'Mounth',
+			3: 'Day',
+		}
 	},
-	last: {
-		name: 'last',
+	personal: {
+		name: 'personal',
 		question: 'Congratulations! Last step.',
 		text: 'Get access to your vehicle and financing options by creating your account. There is no obligation to continue with financing if you change your mind. ',
+		ph: {
+			1: 'First name',
+			2: 'Last name',
+			3: 'Email',
+			4: 'Phone number',
+		}
 	},
 	finish: {
-		icon: '',
+		icon: images.iconSuccess,
 		titleBtn: 'Go to main page',
-		title: 'Application successful!',
+		question: 'Application successful!',
 		text: 'Your response was successfully submitted. Thank you! Our team will reach out to you shortly.',
+		confirmData: {
+			title: 'Confirmation number:',
+			num: '0002466-1vwrh0'
+		}
 	}
 }
 

@@ -4,19 +4,23 @@ import { InputQuiz } from "./InputQuiz/InputQuiz";
 import { ContinueQuizBtn } from "../../../UI/Buttons/ContinueQuizBtn/ContinueQuizBtn";
 import { BackQuizBtn } from "../../../UI/Buttons/BackQuizBtn/BackQuizBtn";
 
-export const OneInputQuiz = ({ result, setResult, ...props }) => {
+export const IncomeStepQuiz = ({ result, setResult, ...props }) => {
 
-	let [value, setValue] = useState('');
+	let [incomeValue, setIncomeValue] = useState('');
+
+
 	const onContinueClick = () => {
-		setResult({ ...result, [props.state.name]: value });
-		setValue('');
+		setResult({ ...result, [props.state.name]: incomeValue });
+		props.checkProgress(props.next);
 	}
+	const onBackClickHandler = () => { props.onBackClick(props.prev, props.state.name) }
+
 	return (
 		<>
 			<div className="form-quiz">
 				<InputQuiz
-					value={value}
-					setValue={setValue}
+					value={incomeValue}
+					setValue={setIncomeValue}
 					placeholder={props.state.ph[1]}
 					name={props.state.name}
 				/>
@@ -31,7 +35,7 @@ export const OneInputQuiz = ({ result, setResult, ...props }) => {
 						? <BackQuizBtn
 							className="buttons-quiz__back"
 							prev={props.prev}
-							onBackClick={props.onBackClick} />
+							onBackClick={onBackClickHandler} />
 						: <></>
 				}
 			</div>
