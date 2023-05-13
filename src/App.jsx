@@ -3,21 +3,21 @@ import { Route, Routes, } from "react-router-dom";
 import './App.scss';
 import { Footer } from "./components/UI/Footer/Footer.jsx";
 import { Home } from "./components/Home/Home.jsx";
-import { CalcPage } from "./components/CalcPage/CalcPage.jsx";
-import { VehicleVideos } from "./components/VehicleVideos/VehicleVideos.jsx";
-import { About } from "./components/About/About.jsx";
-import { LoanRates } from "./components/LoanRates/LoanRates.jsx";
-import { NotFoundPage } from "./components/Page404/Page404.jsx";
-import { Blog } from "./components/Blog/Blog.jsx";
-import { FirstArticle } from "./components/Blog/Articles/FirstArticle.jsx";
-import { SecondArticle } from "./components/Blog/Articles/SecondArticle.jsx";
-import { Terms } from "./components/TermsPrivacy/Terms.jsx";
-import { Privacy } from "./components/TermsPrivacy/Privacy.jsx";
+// import { CalcPage } from "./components/CalcPage/CalcPage.jsx";
+// import { VehicleVideos } from "./components/VehicleVideos/VehicleVideos.jsx";
+// import { About } from "./components/About/About.jsx";
+// import { LoanRates } from "./components/LoanRates/LoanRates.jsx";
+// import { NotFoundPage } from "./components/Page404/Page404.jsx";
+// import { Blog } from "./components/Blog/Blog.jsx";
+// import { FirstArticle } from "./components/Blog/Articles/FirstArticle.jsx";
+// import { SecondArticle } from "./components/Blog/Articles/SecondArticle.jsx";
+// import { Terms } from "./components/TermsPrivacy/Terms.jsx";
+// import { Privacy } from "./components/TermsPrivacy/Privacy.jsx";
 import { MenuModal } from "./components/UI/Modals/MenuModal.jsx";
 import { ContactModal } from "./components/UI/Modals/ContactModal.jsx";
-import { Catalog } from "./components/Catalog/Catalog.jsx";
-import { CarPage } from "./components/Catalog/CarPage/CarPage.jsx";
-import { Quiz } from "./components/Quiz/Quiz.jsx";
+// import { Catalog } from "./components/Catalog/Catalog.jsx";
+// import { CarPage } from "./components/Catalog/CarPage/CarPage.jsx";
+// import { Quiz } from "./components/Quiz/Quiz.jsx";
 
 export function App({ store }) {
 
@@ -41,7 +41,7 @@ export function App({ store }) {
 					state={state.homePage}
 					stateModals={showModals}
 				/>} />
-				<Route path="/calc" element={<CalcPage
+				{/* <Route path="/calc" element={<CalcPage
 					state={state.calcPage}
 					stateModals={showModals}
 				/>} />
@@ -90,7 +90,7 @@ export function App({ store }) {
 				/>} />
 				<Route path="*" element={
 					<NotFoundPage state={state.notFoundPage} />
-				} />
+				} /> */}
 			</Routes>
 
 			<Footer images={

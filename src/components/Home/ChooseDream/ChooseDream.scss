@@ -46,6 +46,9 @@
 			max-width: 100%;
 			justify-content: space-between;
 		}
+		&__image {
+			aspect-ratio: 600/248.44;
+		}
 		&__text-wrap {
 			max-width: 240px;
 			margin: 13px 0 0;

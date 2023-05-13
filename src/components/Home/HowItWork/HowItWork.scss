@@ -29,10 +29,12 @@
 		&_sedan {
 			bottom: 0;
 			left: -101px;
+			aspect-ratio: 511/210;
 		}
 		&_suv {
 			top: 26px;
 			right: -50px;
+			aspect-ratio: 510/256;
 		}
 	}
 }
@@ -49,11 +51,13 @@
 			&_sedan {
 				left: -108px;
 				max-width: 396px;
+				aspect-ratio: 396/162.73;
 			}
 			&_suv {
 				right: -160px;
 				top: 185px;
 				max-width: 404px;
+				aspect-ratio: 404/202.78;
 			}
 		}
 	}
@@ -75,12 +79,14 @@
 			&_sedan {
 				left: -95px;
 				max-width: 274px;
+				aspect-ratio: 274/112;
 			}
 			&_suv {
 				right: -81px;
 				bottom: 78px;
 				top: auto;
 				max-width: 259px;
+				aspect-ratio: 259/130;
 			}
 		}
 	}

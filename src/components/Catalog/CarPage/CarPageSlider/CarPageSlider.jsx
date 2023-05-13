@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Zoom, Navigation, Thumbs } from "swiper";
+import { Navigation, Thumbs } from "swiper";
 import iconShare from '../../../../assets/icons/share-white.svg';
 
 import './CarPageSlider.scss';
@@ -33,7 +33,7 @@ export const CarPageSlider = ({ state, ...props }) => {
 				centeredSlides={true}
 				navigation={true}
 				thumbs={{ swiper: thumbsSwiper }}
-				modules={[Zoom, Navigation, Thumbs]}
+				modules={[Navigation, Thumbs]}
 				zoom={true}
 				className="card-slider__big"
 				onBeforeInit={(swiper) => {

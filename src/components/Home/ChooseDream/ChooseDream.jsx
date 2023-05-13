@@ -14,7 +14,7 @@ export const ChooseDream = ({ state }) => {
 							img={state.image.img}
 							webp={state.image.webp}
 							imgMob={state.image.imgM}
-							webpM={state.image.webpM}
+							webpMob={state.image.webpM}
 							imgTab={state.image.imgT}
 							webpTab={state.image.webpT}
 							widthMob="992"

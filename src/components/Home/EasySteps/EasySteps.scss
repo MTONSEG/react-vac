@@ -56,6 +56,9 @@
 		&__title {
 			margin: 0 0 23px;
 		}
+		&__image {
+			aspect-ratio: 360/377;
+		}
 		&__image-wrap {
 			flex-shrink: 1;
 			margin: 0 -19px;

@@ -13,7 +13,7 @@ export const SliderInteresting = ({ state, ...props }) => {
 		<SwiperSlide key={el.id}>
 			<ItemSliderInteresting
 				img={el.image.img}
-				webp={el.image.wbp}
+				webp={el.image.webp}
 				date={el.date}
 				title={el.text}
 			/>
