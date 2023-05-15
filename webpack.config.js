@@ -1,6 +1,8 @@
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 const path = require('path');
+
 
 let mode = 'development';
 if (process.env.NODE_ENV === 'production') {
@@ -13,14 +15,20 @@ module.exports = {
 	devtool: 'source-map',
 	output: {
 		path: path.resolve(__dirname, './root'),
-		assetModuleFilename: 'assets/fonts/[hash][ext][query]',
 		filename: 'js/app.[hash].js',
 		clean: true,
+		publicPath: '/',
 	},
 	devServer: {
-		allowedHosts: ['host.com']
+		open: true,
+		port: 8080,
+		historyApiFallback: true
+	},
+	resolve: {
+		extensions: ['.js', '.jsx'],
 	},
 	plugins: [
+		new webpack.HotModuleReplacementPlugin(),
 		new HtmlWebpackPlugin({
 			template: './src/index.html'
 		}),
@@ -30,7 +38,7 @@ module.exports = {
 				options: {
 					plugins: [
 						['mozjpeg', { quality: 85 }],
-						['optipng', { optimizationLevel: 5 }],
+						['optipng', { optimizationLevel: 3 }],
 						[
 							"svgo",
 							{
@@ -70,24 +78,25 @@ module.exports = {
 	module: {
 		rules: [
 			{
-				test: /\.(png|jpe?g|gif)$/i,
-				loader: 'file-loader',
-				options: {
-					name: '[name].[ext]',
-					outputPath: 'assets/images',
-				},
+				test: /\.svg$/i,
+				type: 'asset/resource',
+				generator: {
+					filename: 'assets/icons/[hash][ext]'
+				}
 			},
 			{
-				test: /\.svg$/i,
-				loader: 'file-loader',
-				options: {
-					name: '[name].[ext]',
-					outputPath: 'assets/icons',
-				},
+				test: /\.(png|jpe?g|gif)$/i,
+				type: 'asset/resource',
+				generator: {
+					filename: 'assets/images/[name][hash][ext]'
+				}
 			},
 			{
 				test: /\.(woff(2)?)$/,
-				type: 'asset/resource'
+				type: 'asset/resource',
+				generator: {
+					filename: 'assets/fonts/[hash][ext]'
+				}
 			},
 			{
 				test: /\.module\.scss$/,
