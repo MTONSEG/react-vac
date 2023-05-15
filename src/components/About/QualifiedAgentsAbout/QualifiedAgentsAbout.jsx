@@ -2,7 +2,7 @@ import React from "react";
 import { SolidBtn } from "../../UI/Buttons/SolidBtn.jsx";
 import './QualifiedAgentsAbout.scss';
 
-export const QualifiedAgentsAbout = ({ state }) => {
+const QualifiedAgentsAbout = ({ state }) => {
 	return (
 		<div className="qualified-agents">
 			<div className="qualified-agents__card">
@@ -32,3 +32,5 @@ export const QualifiedAgentsAbout = ({ state }) => {
 		</div>
 	)
 }
+
+export default QualifiedAgentsAbout;

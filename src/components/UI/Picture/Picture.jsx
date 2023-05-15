@@ -1,6 +1,6 @@
 import React from "react";
 
-export function Picture({ img, webp, ...rest }) {
+function Picture({ img, webp, ...rest }) {
 	let imageExt = (img.slice(-7).split('.')[1]).trim();
 	let type = 'image/' + imageExt;
 	if (imageExt != 'png') {
@@ -43,7 +43,10 @@ export function Picture({ img, webp, ...rest }) {
 			}
 			<source srcSet={webp} type='image/webp' />
 			{/* <source srcSet={img} type={type} /> */}
-			<img className={rest.className} src={img} alt={alt} />
+			<img className={rest.className} src={img} alt={alt}
+				loading={rest.lazy ? 'lazy' : 'auto'} />
 		</picture>
 	)
 }
+
+export default Picture;

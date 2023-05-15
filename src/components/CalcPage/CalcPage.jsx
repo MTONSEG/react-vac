@@ -1,10 +1,11 @@
-import React from "react";
-import { Header } from "../UI/Header/Header.jsx";
-import { Calculator } from "../Home/Calculator/Calculator.jsx";
-import { TitlePages } from "../UI/TitlePages/TitlePages.jsx";
+import React, { lazy } from "react";
+
+const Calculator = lazy(() => import('../Home/Calculator/Calculator.jsx'))
+const Header = lazy(() => import('../UI/Header/Header.jsx'))
+import TitlePages from "../UI/TitlePages/TitlePages.jsx";
 import './CalcPage.scss';
 
-export const CalcPage = ({ state, ...props }) => {
+const CalcPage = ({ state, ...props }) => {
 
 	let modalState = props.stateModals;
 
@@ -25,3 +26,5 @@ export const CalcPage = ({ state, ...props }) => {
 		</>
 	);
 }
+
+export default CalcPage;

@@ -17,7 +17,7 @@ module.exports = {
 		path: path.resolve(__dirname, './root'),
 		filename: 'js/app.[hash].js',
 		clean: true,
-		publicPath: '/'
+		publicPath: '/',
 	},
 	devServer: {
 		open: true,

@@ -4,7 +4,7 @@ import './HappyCustomers.scss';
 import { StatCard } from "./StatCard/StatCard.jsx";
 
 
-export const HappyCustomers = ({ state }) => {
+const HappyCustomers = ({ state }) => {
 	let width = window.innerWidth;
 
 	let itemCustomers = state.cards.map((el, index) => (
@@ -59,3 +59,5 @@ export const HappyCustomers = ({ state }) => {
 		</div>
 	)
 }
+
+export default HappyCustomers;

@@ -2,7 +2,7 @@ import React from "react";
 import { SolidBtn } from "../../UI/Buttons/SolidBtn.jsx";
 import './BestPricesAbout.scss';
 
-export const BestPricesAbout = ({ state }) => {
+const BestPricesAbout = ({ state }) => {
 	return (
 		<article className="best-prices">
 			<div className="best-prices__left">
@@ -35,3 +35,5 @@ export const BestPricesAbout = ({ state }) => {
 		</article>
 	)
 }
+
+export default BestPricesAbout;

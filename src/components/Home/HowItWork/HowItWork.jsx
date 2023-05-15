@@ -1,8 +1,11 @@
 import React from "react";
-import { Picture } from "../../UI/Picture/Picture.jsx";
+
+const Picture = React.lazy(() => import('../../UI/Picture/Picture.jsx'));
+
+// import { Picture } from "../../UI/Picture/Picture.jsx";
 import './HowItWork.scss';
 
-export const HowItWork = ({ state }) => {
+const HowItWork = ({ state }) => {
 	let images = state.images;
 	return (
 		<div className="it-work">
@@ -32,3 +35,4 @@ export const HowItWork = ({ state }) => {
 		</div>
 	)
 }
+export default HowItWork;

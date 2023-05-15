@@ -1,10 +1,10 @@
 import React from "react";
 import './ChooseDream.scss';
-import { Picture } from "../../UI/Picture/Picture.jsx";
+const Picture = React.lazy(() => import('../../UI/Picture/Picture.jsx'));
 import { SolidBtn } from "../../UI/Buttons/SolidBtn.jsx";
 
 
-export const ChooseDream = ({ state }) => {
+const ChooseDream = ({ state }) => {
 	return (
 		<div className="choose-dream">
 			<div className="container">
@@ -40,3 +40,5 @@ export const ChooseDream = ({ state }) => {
 		</div>
 	)
 }
+
+export default ChooseDream;

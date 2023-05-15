@@ -1,9 +1,9 @@
-import React from "react";
+import React, {lazy}  from "react";
 import { SolidBtn } from "../../UI/Buttons/SolidBtn.jsx";
-import { Picture } from "../../UI/Picture/Picture.jsx";
+const Picture = lazy(() => import('../../UI/Picture/Picture.jsx'));
 import './MissionAbout.scss';
 
-export const MissionAbout = ({ state }) => {
+const MissionAbout = ({ state }) => {
 	return (
 		<div className="mission-about">
 			<article className="mission-about__body">
@@ -30,3 +30,5 @@ export const MissionAbout = ({ state }) => {
 		</div>
 	)
 }
+
+export default MissionAbout;

@@ -1,7 +1,7 @@
 import React from "react";
 import './Advantages.scss';
 
-export const Advantages = ({ state }) => {
+const Advantages = ({ state }) => {
 
 	let itemsList = state.list.map(elem => (
 		<li
@@ -36,3 +36,4 @@ export const Advantages = ({ state }) => {
 		</div>
 	)
 }
+export default Advantages;

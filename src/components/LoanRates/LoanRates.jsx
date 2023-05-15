@@ -1,13 +1,14 @@
 import React from "react";
 import './LoanRates.scss';
-import { TitlePages } from "../UI/TitlePages/TitlePages.jsx";
-import { MissionAbout } from "../About/MissionAbout/MissionAbout.jsx";
+import TitlePages from "../UI/TitlePages/TitlePages.jsx";
+import MissionAbout from "../About/MissionAbout/MissionAbout.jsx";
 import { TermsLoanRates } from "./TermsLoanRates/TermsLoanRates.jsx";
 import { BenefitsLoanRates } from "./BenefitsLoanRates/BenefitsLoanRates.jsx";
-import { Calculator } from "../Home/Calculator/Calculator.jsx";
-import { Header } from "../UI/Header/Header.jsx";
+import Calculator from "../Home/Calculator/Calculator.jsx";
 
-export const LoanRates = ({ state, ...props }) => {
+const Header = React.lazy(() => import('../UI/Header/Header.jsx'))
+
+const LoanRates = ({ state, ...props }) => {
 	let modalState = props.stateModals;
 
 	return (
@@ -39,3 +40,5 @@ export const LoanRates = ({ state, ...props }) => {
 		</>
 	)
 }
+
+export default LoanRates;

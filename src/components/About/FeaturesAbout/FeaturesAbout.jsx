@@ -1,9 +1,9 @@
-import React from "react";
-import { Picture } from "../../UI/Picture/Picture.jsx";
+import React, {lazy} from "react";
+const Picture = lazy(() => import('../../UI/Picture/Picture.jsx'));
 import { StatCard } from "../../Home/HappyCustomers/StatCard/StatCard.jsx";
 import './FeaturesAbout.scss';
 
-export const FeaturesAbout = ({ state }) => {
+const FeaturesAbout = ({ state }) => {
 	let itemCustomers = state.cards.map((el, index) => (
 		<StatCard
 			key={index}
@@ -37,3 +37,5 @@ export const FeaturesAbout = ({ state }) => {
 		</article>
 	)
 }
+
+export default FeaturesAbout;

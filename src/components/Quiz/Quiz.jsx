@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import './Quiz.scss';
 import { quizData } from "../../state";
-import { Header } from "../UI/Header/Header";
+const Header = React.lazy(() => import('../UI/Header/Header.jsx'))
 import { ProgressQuiz } from "./ProgressQuiz/ProgressQuiz";
 import { BodyQuiz } from "./BodyQuiz/BodyQuiz";
 import { ContainerQuiz } from "./ContainerQuiz/ContainerQuiz";
@@ -15,7 +15,7 @@ import { FinishStepQuiz } from "./BodyQuiz/AnswersWithFormQuiz/FinishStepQuiz";
 import { ReceivingStepQuiz } from "./BodyQuiz/AnswersWithFormQuiz/ReceivingStepQuiz";
 import { IncomeStepQuiz } from "./BodyQuiz/AnswersWithFormQuiz/IncomeStepQuiz";
 
-export const Quiz = props => {
+const Quiz = props => {
 	let modalState = props.stateModals;
 
 	let [state, setState] = useState(quizData);
@@ -315,3 +315,5 @@ export const Quiz = props => {
 	)
 
 }
+
+export default Quiz;

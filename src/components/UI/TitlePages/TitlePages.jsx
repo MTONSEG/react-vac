@@ -1,7 +1,7 @@
 import React from "react";
 import './TitlePages.scss';
 
-export const TitlePages = props => {
+const TitlePages = props => {
 	return (
 		<div className={
 			props.className ?
@@ -15,3 +15,5 @@ export const TitlePages = props => {
 		</div>
 	)
 };
+
+export default TitlePages;

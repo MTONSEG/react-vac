@@ -1,7 +1,7 @@
 import React from "react";
 import './Play.scss';
 
-export const Play = props => {
+const Play = props => {
 	return (
 		<button className={
 			props.className ?
@@ -12,3 +12,5 @@ export const Play = props => {
 		</button>
 	);
 }
+
+export default Play;

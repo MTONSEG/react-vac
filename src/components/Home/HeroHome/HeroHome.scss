@@ -2,6 +2,7 @@
 
 .hero {
 	background: url('../../../assets/images/home_hero.svg') center/cover no-repeat, $violetColor;
+	// background: $violetColor;
 	&__row {
 		padding: 124px 0 184px;
 		display: flex;
@@ -51,7 +52,7 @@
 		background: url('../../../assets/images/home_hero_tab.svg') center/cover no-repeat, $violetColor;
 	}
 }
-@media (max-width: 360px) {
+@media (max-width: 550px) {
 	.hero {
 		background: url('../../../assets/images/home_hero_m.svg') center/cover no-repeat, $violetColor;
 	}

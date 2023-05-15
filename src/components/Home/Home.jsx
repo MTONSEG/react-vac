@@ -1,18 +1,17 @@
-import React from "react";
+import React, {lazy} from "react";
 import './Home.scss';
-import { Header } from "../UI/Header/Header.jsx";
-import { EasySteps } from "./EasySteps/EasySteps.jsx";
-import { HeroHome } from "./HeroHome/HeroHome.jsx";
-import { HowItWork } from "./HowItWork/HowItWork.jsx";
-import { Advantages } from "./Advantages/Advantages.jsx";
-import { ChooseDream } from "./ChooseDream/ChooseDream.jsx";
-import { HappyCustomers } from "./HappyCustomers/HappyCustomers.jsx";
-import { CommentsSlider } from "./CommentsSlider/CommentsSlider.jsx";
-import { Calculator } from "./Calculator/Calculator.jsx";
-import { InterestingRead } from "./InterestingRead/InterestingRead.jsx";
+const Header = lazy(() => import('../UI/Header/Header.jsx'))
+const HeroHome = lazy(() => import('./HeroHome/HeroHome.jsx'))
+const HowItWork = lazy(() => import('./HowItWork/HowItWork.jsx'))
+const Advantages = lazy(() => import('./Advantages/Advantages.jsx'))
+const ChooseDream = lazy(() => import('./ChooseDream/ChooseDream.jsx'))
+const EasySteps = lazy(() => import('./EasySteps/EasySteps.jsx'))
+const CommentsSlider = lazy(() => import('./CommentsSlider/CommentsSlider.jsx'))
+const HappyCustomers = lazy(() => import('./HappyCustomers/HappyCustomers.jsx'))
+const Calculator = lazy(() => import('./Calculator/Calculator.jsx'))
+const InterestingRead = lazy(() => import('./InterestingRead/InterestingRead.jsx'))
 
-
-export const Home = ({ state, ...props }) => {
+const Home = ({ state, ...props }) => {
 
 	let modalState = props.stateModals;
 
@@ -37,3 +36,5 @@ export const Home = ({ state, ...props }) => {
 		</>
 	)
 }
+
+export default Home;

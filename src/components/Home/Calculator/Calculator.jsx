@@ -4,7 +4,7 @@ import { PaymentRange } from "./PaymentRange/PaymentRange.jsx";
 import { RangeCalculate } from "./RangeCalculate/RangeCalculate.jsx";
 
 
-export const Calculator = ({ state, ...props }) => {
+const Calculator = ({ state, ...props }) => {
 
 	let [loanAmount, setLoanAmount] = useState(state.loanAmount.default);
 	let [loanDuration, setLoanDuration] = useState(state.loanDuration.default)
@@ -63,3 +63,5 @@ export const Calculator = ({ state, ...props }) => {
 		</div>
 	)
 }
+
+export default Calculator;

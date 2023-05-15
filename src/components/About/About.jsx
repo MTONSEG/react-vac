@@ -1,18 +1,18 @@
-import React from "react";
+import React, {lazy} from "react";
 import './About.scss';
-import { TitlePages } from "../UI/TitlePages/TitlePages.jsx";
-import { MissionAbout } from "./MissionAbout/MissionAbout.jsx";
-import { DreamCarAbout } from "./DreamCarAbout/DreamCarAbout.jsx";
-import { TransparencyAbout } from "./TransparencyAbout/TransparencyAbout.jsx";
-import { BestPricesAbout } from "./BestPricesAbout/BestPricesAbout.jsx";
-import { QualifiedAgentsAbout } from "./QualifiedAgentsAbout/QualifiedAgentsAbout.jsx";
-import { CommentsSlider } from "../Home/CommentsSlider/CommentsSlider.jsx";
-import { DynamicTeamAbout } from "./DynamicTeamAbout/DynamicTeamAbout.jsx";
-import { FeaturesAbout } from "./FeaturesAbout/FeaturesAbout.jsx";
-import { Calculator } from "../Home/Calculator/Calculator.jsx";
-import { Header } from "../UI/Header/Header.jsx";
+import TitlePages from "../UI/TitlePages/TitlePages.jsx";
+const Header = lazy(() => import('../UI/Header/Header.jsx'))
+const MissionAbout = lazy(() => import('./MissionAbout/MissionAbout.jsx'))
+const DreamCarAbout = lazy(() => import('./DreamCarAbout/DreamCarAbout.jsx'))
+const TransparencyAbout = lazy(() => import('./TransparencyAbout/TransparencyAbout.jsx'))
+const BestPricesAbout = lazy(() => import('./BestPricesAbout/BestPricesAbout.jsx'))
+const QualifiedAgentsAbout = lazy(() => import('./QualifiedAgentsAbout/QualifiedAgentsAbout.jsx'))
+const CommentsSlider = lazy(() => import('../Home/CommentsSlider/CommentsSlider.jsx'))
+const DynamicTeamAbout = lazy(() => import('./DynamicTeamAbout/DynamicTeamAbout.jsx'))
+const FeaturesAbout = lazy(() => import('./FeaturesAbout/FeaturesAbout.jsx'))
+const Calculator = lazy(() => import('../Home/Calculator/Calculator.jsx'))
 
-export const About = ({ state, ...props }) => {
+const About = ({ state, ...props }) => {
 
 	let modalState = props.stateModals;
 
@@ -62,3 +62,5 @@ export const About = ({ state, ...props }) => {
 		</>
 	)
 }
+
+export default About;

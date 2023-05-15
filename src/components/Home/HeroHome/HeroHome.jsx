@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { SolidBtn } from "../../UI/Buttons/SolidBtn.jsx";
 import './HeroHome.scss';
 import { SliderHero } from "./SliderHero/SliderHero.jsx";
 
-export const HeroHome = ({ state }) => {
+const HeroHome = ({ state }) => {
 
 	let isTab = window.innerWidth > 992;
 
@@ -40,3 +40,5 @@ export const HeroHome = ({ state }) => {
 		</div>
 	)
 }
+
+export default HeroHome;

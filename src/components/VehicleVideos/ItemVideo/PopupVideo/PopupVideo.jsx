@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import loadingLogo from '../../../../assets/icons/loading_logo.svg';
 import './PopupVideo.scss';
 
-export const PopupVideo = props => {
+const PopupVideo = props => {
 
 	useEffect(() => {
 		document.body.style.overflow = props.activeVideo ? 'hidden' : 'auto';
@@ -39,3 +39,5 @@ export const PopupVideo = props => {
 		</div>
 	);
 }
+
+export default PopupVideo;

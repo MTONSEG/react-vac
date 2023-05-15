@@ -5,12 +5,12 @@ import { CommentSlide } from "./CommentSlide/CommentSlide.jsx";
 
 
 
-export const CommentsSlider = ({ state }) => {
+const CommentsSlider = ({ state }) => {
 	const swiperRef = useRef();
 
 	let slides = state.slides.map(el => (
 		<SwiperSlide key={el.id}>
-			<CommentSlide 
+			<CommentSlide
 				img={el.image.img}
 				webp={el.image.webp}
 				name={el.name}
@@ -18,7 +18,7 @@ export const CommentsSlider = ({ state }) => {
 			/>
 		</SwiperSlide>
 	))
-	
+
 	const onPrevClickHandler = () => swiperRef.current?.slidePrev();
 
 	const onNextClickHandler = () => swiperRef.current?.slideNext();
@@ -56,3 +56,5 @@ export const CommentsSlider = ({ state }) => {
 		</div>
 	)
 }
+
+export default CommentsSlider;

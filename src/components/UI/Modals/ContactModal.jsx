@@ -1,10 +1,9 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
 import { SolidBtn } from "../Buttons/SolidBtn.jsx";
 import { InputForm } from "../Forms/InputForm/InputForm.jsx";
 import './Modals.scss';
 
-export const ContactModal = ({ state, ...props }) => {
+const ContactModal = ({ state, ...props }) => {
 	let icons = state.icons;
 
 	const handleOnCloseClick = () => { props.setShowMenu(!props.showMenu) }
@@ -37,20 +36,20 @@ export const ContactModal = ({ state, ...props }) => {
 						</h1>
 
 						<div className="form-modal__inputs">
-							<InputForm 
+							<InputForm
 								name="Name"
 								className="from-modal__input"
 								icon={icons.user}
 								placeholder="Your Name"
 							/>
-							<InputForm 
+							<InputForm
 								name="Name"
 								className="from-modal__input"
 								icon={icons.phone}
 								placeholder="Phone Number"
 								type="number"
 							/>
-							<InputForm 
+							<InputForm
 								name="Name"
 								className="from-modal__input"
 								icon={icons.mail}
@@ -77,7 +76,7 @@ export const ContactModal = ({ state, ...props }) => {
 						<a className="modal__soc-link" href="#">
 							<img src={icons.fb} alt="instagram" className="modal__soc-icon" />
 						</a>
-						
+
 						<a className="modal__soc-link" href="#">
 							<img src={icons.yt} alt="instagram" className="modal__soc-icon" />
 						</a>
@@ -90,3 +89,5 @@ export const ContactModal = ({ state, ...props }) => {
 		</div>
 	);
 }
+
+export default ContactModal;

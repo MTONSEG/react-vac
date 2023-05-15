@@ -1,10 +1,12 @@
-import React, { useState } from "react";
-import { Picture } from "../../UI/Picture/Picture.jsx";
-import { Play } from "../../UI/Play/Play.jsx";
-import './ItemVideo.scss';
-import { PopupVideo } from "./PopupVideo/PopupVideo.jsx";
+import React, { useState, lazy } from "react";
+const Picture = lazy(() => import('../../UI/Picture/Picture.jsx'));
+const Play = lazy(() => import('../../UI/Play/Play.jsx'));
+const PopupVideo = lazy(() => import('./PopupVideo/PopupVideo.jsx'));
 
-export const ItemVideo = props => {
+import './ItemVideo.scss';
+
+
+const ItemVideo = props => {
 	let [activeVideo, setActiveVideo] = useState(false)
 
 	const onClickPlayHandler = () => setActiveVideo(!activeVideo);
@@ -40,3 +42,5 @@ export const ItemVideo = props => {
 		</>
 	);
 }
+
+export default ItemVideo;

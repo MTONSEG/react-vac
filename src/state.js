@@ -532,8 +532,8 @@ let homePage = {
 			{
 				id: v1(),
 				image: {
-					img: images.homePage.imgComment2,
-					webp: images.homePage.imgComment2Webp,
+					img: images.homePage.imgComment,
+					webp: images.homePage.imgCommentWebp,
 				},
 				name: 'John Smith',
 				comment: 'Adipisicing ullamco nisi veniam occaecat id excepteur ad non. Sunt occaecat elit ullamco commodo exercitation. Anim mollit irure Lorem proident veniam excepteur non irure Lorem. Lorem esse sint in nisi id ese'

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import './Page404.scss';
 
-export const NotFoundPage = ({ state }) => (
+const NotFoundPage = ({ state }) => (
 	<div className="not-found-page">
 		<div className="container">
 			<div className="not-found-page__body">
@@ -20,3 +20,5 @@ export const NotFoundPage = ({ state }) => (
 		</div>
 	</div>
 )
+
+export default NotFoundPage;

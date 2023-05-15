@@ -3,7 +3,7 @@ import './InterestingRead.scss';
 import { LinerBtn } from '../../UI/Buttons/LinerBtn.jsx'
 import { SliderInteresting } from "./SliderInteresting/SliderInteresting.jsx";
 
-export const InterestingRead = ({ state }) => {
+const InterestingRead = ({ state }) => {
 
 	let displayWidth = window.innerWidth;
 
@@ -40,3 +40,5 @@ export const InterestingRead = ({ state }) => {
 		</div>
 	)
 }
+
+export default InterestingRead;

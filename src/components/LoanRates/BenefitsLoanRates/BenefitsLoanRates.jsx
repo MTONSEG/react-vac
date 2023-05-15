@@ -1,6 +1,6 @@
 import React from "react";
 import { SolidBtn } from "../../UI/Buttons/SolidBtn.jsx";
-import { Picture } from "../../UI/Picture/Picture.jsx";
+const Picture = React.lazy(() => import('../../UI/Picture/Picture.jsx'));
 import './BenefitsLoanRates.scss';
 
 export const BenefitsLoanRates = ({ state }) => {

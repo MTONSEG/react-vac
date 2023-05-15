@@ -4,7 +4,7 @@ import { MenuBtn } from "../Buttons/MenuBtn.jsx";
 import { SolidBtn } from "../Buttons/SolidBtn.jsx";
 import './Header.scss';
 
-export const Header = props => {
+const Header = props => {
 
 	const handleOnToggleCLock = () => { props.setShowRequest(!props.showRequest) }
 
@@ -59,3 +59,5 @@ export const Header = props => {
 		</header>
 	)
 };
+
+export default Header;

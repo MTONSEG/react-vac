@@ -1,9 +1,9 @@
 import React from "react";
-import { Picture } from "../../UI/Picture/Picture.jsx";
+const Picture = React.lazy(() => import('../../UI/Picture/Picture.jsx'));
 import './EasySteps.scss';
 import { StepItem } from "./StepItem/StepItem.jsx";
 
-export const EasySteps = ({ state }) => {
+const EasySteps = ({ state }) => {
 	let listSteps = state.list.map(elem => (
 		<StepItem
 			key={elem.id}
@@ -42,3 +42,5 @@ export const EasySteps = ({ state }) => {
 		</div>
 	)
 }
+
+export default EasySteps;

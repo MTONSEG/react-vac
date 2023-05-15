@@ -42,9 +42,17 @@
 		&-link:hover {
 			transform: scale(1.1);
 		}
+		&-icon {
+			width: 30px;
+			height: 30px;
+		}
 	}
 	&__created {
 		margin: 0 6.6% 0 0;
+		&-icon {
+			width: 28px;
+			height: 27px;
+		}
 	}
 	&__created-text {
 		margin: 0 10px 0 0;

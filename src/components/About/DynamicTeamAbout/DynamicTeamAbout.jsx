@@ -1,8 +1,8 @@
-import React from "react";
-import { Picture } from "../../UI/Picture/Picture.jsx";
+import React, {lazy}  from "react";
+const Picture = lazy(() => import('../../UI/Picture/Picture.jsx'));
 import './DynamicTeamAbout.scss';
 
-export const DynamicTeamAbout = ({ state }) => {
+const DynamicTeamAbout = ({ state }) => {
 
 	return (
 		<article className="dynamic-team">
@@ -42,3 +42,5 @@ export const DynamicTeamAbout = ({ state }) => {
 		</article>
 	)
 }
+
+export default DynamicTeamAbout;

@@ -2,7 +2,7 @@ import React from "react";
 import './DreamCarAbout.scss';
 import { StepItem } from "../../Home/EasySteps/StepItem/StepItem.jsx";
 
-export const DreamCarAbout = ({ state }) => {
+const DreamCarAbout = ({ state }) => {
 	let listSteps = state.list.map(elem => (
 		<StepItem
 			key={elem.id}
@@ -34,3 +34,5 @@ export const DreamCarAbout = ({ state }) => {
 		</div>
 	)
 }
+
+export default DreamCarAbout;

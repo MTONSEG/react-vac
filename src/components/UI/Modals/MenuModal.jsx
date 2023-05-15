@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import './Modals.scss';
 
-export const MenuModal = ({ state, ...props }) => {
+const MenuModal = ({ state, ...props }) => {
 	let icons = state.icons;
 
 	const handleOnCloseClick = () => { props.setShowMenu(!props.showMenu) }
@@ -98,3 +98,5 @@ export const MenuModal = ({ state, ...props }) => {
 		</div>
 	);
 }
+
+export default MenuModal;

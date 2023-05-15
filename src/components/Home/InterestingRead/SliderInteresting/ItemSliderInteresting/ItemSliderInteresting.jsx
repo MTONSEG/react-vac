@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Picture } from "../../../../UI/Picture/Picture.jsx";
+const Picture = React.lazy(() => import('../../../../UI/Picture/Picture.jsx'));
 import './ItemSliderInteresting.scss';
 
 export const ItemSliderInteresting = props => {

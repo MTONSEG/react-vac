@@ -1,10 +1,12 @@
-import React, { useState } from "react";
-import { TitlePages } from "../UI/TitlePages/TitlePages.jsx";
-import { ItemVideo } from "./ItemVideo/ItemVideo.jsx";
-import { Header } from "../UI/Header/Header.jsx";
+import React, {lazy} from "react";
+const Header = lazy(() => import('../UI/Header/Header.jsx'))
+const ItemVideo = lazy(() => import('./ItemVideo/ItemVideo.jsx'))
+import TitlePages from "../UI/TitlePages/TitlePages.jsx";
+
+// import { ItemVideo } from "./ItemVideo/ItemVideo.jsx";
 import './VehicleVideos.scss';
 
-export const VehicleVideos = ({ state, ...props }) => {
+const VehicleVideos = ({ state, ...props }) => {
 	let modalState = props.stateModals;
 
 	let listVideos = state.list.map(el => (
@@ -37,3 +39,5 @@ export const VehicleVideos = ({ state, ...props }) => {
 		</>
 	);
 }
+
+export default VehicleVideos;

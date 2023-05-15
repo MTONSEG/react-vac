@@ -2,13 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import './Footer.scss';
 
-export const Footer = ({ images }) => {
+const Footer = ({ images }) => {
 	return (
 		<footer className="footer">
 			<div className="container">
 				<div className="footer__row">
 					<img loading="lazy" src={images.logo} alt="" className="footer__logo" />
-					<ul className="footer__list-links">
+					<div className="footer__list-links">
 						<Link
 							className="footer__link"
 							to='/terms'
@@ -21,18 +21,18 @@ export const Footer = ({ images }) => {
 						>
 							Privacy
 						</Link>
-					</ul>
+					</div>
 					<div className="footer__soc">
-						<a className="footer__soc-link" href="#">
-							<img loading="lazy" src={images.instagram} alt="" className="footer__soc-instagram" />
+						<a className="footer__soc-link" href="#" aria-label="Link to Instagram VAC">
+							<img loading="lazy" src={images.instagram} alt="" className="footer__soc-icon" />
 						</a>
 
-						<a className="footer__soc-link" href="#">
-							<img loading="lazy" src={images.facebook} alt="" className="footer__soc-instagram" />
+						<a className="footer__soc-link" href="#" aria-label="Link to Facebook VAC">
+							<img loading="lazy" src={images.facebook} alt="" className="footer__soc-icon" />
 						</a>
 
-						<a className="footer__soc-link" href="#">
-							<img loading="lazy" src={images.youtube} alt="" className="footer__soc-instagram" />
+						<a className="footer__soc-link" href="#" aria-label="Link to Youtube VAC">
+							<img loading="lazy" src={images.youtube} alt="" className="footer__soc-icon" />
 						</a>
 					</div>
 					<div className="footer__created">
@@ -49,3 +49,6 @@ export const Footer = ({ images }) => {
 		</footer>
 	)
 };
+
+
+export default Footer;

@@ -1,5 +1,5 @@
 import React from "react";
-import { Picture } from "../../../UI/Picture/Picture.jsx";
+const Picture = React.lazy(() => import('../../../UI/Picture/Picture.jsx'));
 import './CommentSlide.scss';
 
 

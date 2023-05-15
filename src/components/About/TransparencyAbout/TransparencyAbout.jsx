@@ -1,8 +1,9 @@
-import React from "react";
-import { Picture } from "../../UI/Picture/Picture.jsx";
+import React, {lazy}  from "react";
+
+const Picture = lazy(() => import('../../UI/Picture/Picture.jsx'));
 import './TransparencyAbout.scss';
 
-export const TransparencyAbout = ({ state }) => {
+const TransparencyAbout = ({ state }) => {
 	return (
 		<div className="transparency-about">
 			<div className="transparency-about__image-wrap">
@@ -31,3 +32,5 @@ export const TransparencyAbout = ({ state }) => {
 		</div>
 	)
 }
+
+export default TransparencyAbout;
